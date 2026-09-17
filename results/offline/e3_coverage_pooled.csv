@@ -1,0 +1,5 @@
+method,n,frac_defined,coverage,mean_bound,mean_truth,mean_excess
+ADAPTIVE CP,5600.0,1.0,0.638,0.676,0.682,-0.006
+EXTRAPOLATIVE,5600.0,0.893,0.555,0.686,0.682,-0.049
+FIXED-t CP,5600.0,1.0,0.626,0.697,0.682,0.015
+UNION-BOUND CP,5600.0,1.0,0.671,0.726,0.682,0.044

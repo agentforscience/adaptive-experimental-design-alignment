@@ -1,0 +1,100 @@
+{
+  "alpha": 0.05,
+  "nominal_coverage": 0.95,
+  "grid": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    12,
+    20,
+    35,
+    60,
+    100,
+    200,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "n_boot": 400,
+  "patience_checks": 3,
+  "pooled": {
+    "n": {
+      "ADAPTIVE CP": 5600.0,
+      "EXTRAPOLATIVE": 5600.0,
+      "FIXED-t CP": 5600.0,
+      "UNION-BOUND CP": 5600.0
+    },
+    "frac_defined": {
+      "ADAPTIVE CP": 1.0,
+      "EXTRAPOLATIVE": 0.893,
+      "FIXED-t CP": 1.0,
+      "UNION-BOUND CP": 1.0
+    },
+    "coverage": {
+      "ADAPTIVE CP": 0.638,
+      "EXTRAPOLATIVE": 0.555,
+      "FIXED-t CP": 0.626,
+      "UNION-BOUND CP": 0.671
+    },
+    "mean_bound": {
+      "ADAPTIVE CP": 0.676,
+      "EXTRAPOLATIVE": 0.686,
+      "FIXED-t CP": 0.697,
+      "UNION-BOUND CP": 0.726
+    },
+    "mean_truth": {
+      "ADAPTIVE CP": 0.682,
+      "EXTRAPOLATIVE": 0.682,
+      "FIXED-t CP": 0.682,
+      "UNION-BOUND CP": 0.682
+    },
+    "mean_excess": {
+      "ADAPTIVE CP": -0.006,
+      "EXTRAPOLATIVE": -0.049,
+      "FIXED-t CP": 0.015,
+      "UNION-BOUND CP": 0.044
+    }
+  },
+  "total_null_only": {
+    "n": {
+      "ADAPTIVE CP": 469.0,
+      "EXTRAPOLATIVE": 469.0,
+      "FIXED-t CP": 469.0,
+      "UNION-BOUND CP": 469.0
+    },
+    "frac_defined": {
+      "ADAPTIVE CP": 1.0,
+      "EXTRAPOLATIVE": 0.0,
+      "FIXED-t CP": 1.0,
+      "UNION-BOUND CP": 1.0
+    },
+    "coverage": {
+      "ADAPTIVE CP": 0.874,
+      "EXTRAPOLATIVE": NaN,
+      "FIXED-t CP": 0.878,
+      "UNION-BOUND CP": 0.881
+    },
+    "mean_bound": {
+      "ADAPTIVE CP": 0.06,
+      "EXTRAPOLATIVE": NaN,
+      "FIXED-t CP": 0.067,
+      "UNION-BOUND CP": 0.112
+    },
+    "mean_truth": {
+      "ADAPTIVE CP": 0.023,
+      "EXTRAPOLATIVE": 0.023,
+      "FIXED-t CP": 0.023,
+      "UNION-BOUND CP": 0.023
+    },
+    "mean_excess": {
+      "ADAPTIVE CP": 0.037,
+      "EXTRAPOLATIVE": NaN,
+      "FIXED-t CP": 0.044,
+      "UNION-BOUND CP": 0.089
+    }
+  }
+}

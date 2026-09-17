@@ -1,0 +1,758 @@
+{
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.05618421052631579,
+    "lo": -0.05263157894736842,
+    "hi": 0.15789473684210525,
+    "p": 6.632282502382562e-42,
+    "p_holm": 4.576274926643967e-40
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.12368421052631579,
+    "lo": 0.0,
+    "hi": 0.2631578947368421,
+    "p": 4.799099056818874e-65,
+    "p_holm": 3.839279245455099e-63
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.002763157894736842,
+    "lo": 0.0,
+    "hi": 0.05263157894736842,
+    "p": 0.04619020348097882,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.25013157894736837,
+    "lo": 0.05263157894736842,
+    "hi": 0.42105263157894735,
+    "p": 8.959951895927017e-68,
+    "p_holm": 8.153556225293585e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.029342105263157895,
+    "lo": 0.0,
+    "hi": 0.10526315789473684,
+    "p": 4.412122663374079e-40,
+    "p_holm": 3.0002434110943735e-38
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.20828947368421055,
+    "lo": 0.0,
+    "hi": 0.368421052631579,
+    "p": 9.788257983039433e-67,
+    "p_holm": 8.320019285583519e-65
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.16868421052631574,
+    "lo": 0.10526315789473684,
+    "hi": 0.26315789473684204,
+    "p": 3.0554999115098616e-68,
+    "p_holm": 2.9027249159343684e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.2939473684210526,
+    "lo": 0.21052631578947367,
+    "hi": 0.36842105263157887,
+    "p": 1.2574564383109543e-69,
+    "p_holm": 1.3077546958433926e-67
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.13802631578947366,
+    "lo": 0.05263157894736836,
+    "hi": 0.21052631578947367,
+    "p": 9.935810254479767e-69,
+    "p_holm": 1.0035168357024565e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.13802631578947366,
+    "lo": 0.05263157894736836,
+    "hi": 0.21052631578947367,
+    "p": 9.935810254479767e-69,
+    "p_holm": 1.0035168357024565e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.06125,
+    "lo": -0.05,
+    "hi": 0.15,
+    "p": 2.2209610163451771e-54,
+    "p_holm": 1.643511152095431e-52
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1315,
+    "lo": 0.0,
+    "hi": 0.25,
+    "p": 1.1047552285632767e-66,
+    "p_holm": 9.279943919931525e-65
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.28662499999999996,
+    "lo": 0.15000000000000002,
+    "hi": 0.45,
+    "p": 5.488402426068806e-68,
+    "p_holm": 5.159098280504678e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.011124999999999998,
+    "lo": 0.0,
+    "hi": 0.04999999999999999,
+    "p": 2.980727891583663e-13,
+    "p_holm": 1.8182440138660346e-11
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.251,
+    "lo": 0.050000000000000044,
+    "hi": 0.44999999999999996,
+    "p": 2.0413641058045046e-67,
+    "p_holm": 1.7555731309918739e-65
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.04849999999999996,
+    "lo": 0.0,
+    "hi": 0.09999999999999998,
+    "p": 1.1790393239912187e-60,
+    "p_holm": 9.196506727131507e-59
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.39699999999999996,
+    "lo": 0.24875000000000008,
+    "hi": 0.5,
+    "p": 6.610301702835481e-68,
+    "p_holm": 6.147580583636997e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.262125,
+    "lo": 0.15000000000000002,
+    "hi": 0.35,
+    "p": 1.6819489665390098e-68,
+    "p_holm": 1.6483099872082295e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.262125,
+    "lo": 0.15000000000000002,
+    "hi": 0.35,
+    "p": 1.6819489665390098e-68,
+    "p_holm": 1.6483099872082295e-66
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct|no_intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.07583333333333334,
+    "lo": 0.0,
+    "hi": 0.14814814814814814,
+    "p": 2.05974477418451e-65,
+    "p_holm": 1.6683932670894528e-63
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.18333333333333332,
+    "lo": 0.037037037037037035,
+    "hi": 0.2962962962962963,
+    "p": 1.1799447287016266e-67,
+    "p_holm": 1.0383513612574313e-65
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.44898148148148154,
+    "lo": 0.25833333333333336,
+    "hi": 0.5925925925925926,
+    "p": 1.4235691677014469e-67,
+    "p_holm": 1.2385051759002587e-65
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0005555555555555556,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 0.554896511944845,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.724537037037037,
+    "lo": 0.5185185185185186,
+    "hi": 0.8148148148148149,
+    "p": 1.1133201840002506e-67,
+    "p_holm": 9.90854963760223e-66
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.005833333333333333,
+    "lo": 0.0,
+    "hi": 0.037037037037037035,
+    "p": 5.0738782156499665e-08,
+    "p_holm": 2.9935881472334803e-06
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.7623148148148148,
+    "lo": 0.7407407407407407,
+    "hi": 0.8148148148148149,
+    "p": 1.0825473527574873e-70,
+    "p_holm": 1.1691511409780862e-68
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.14916666666666667,
+    "lo": 0.07407407407407407,
+    "hi": 0.2222222222222222,
+    "p": 6.182357400181858e-69,
+    "p_holm": 6.367828122187314e-67
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.22324074074074077,
+    "lo": 0.14814814814814814,
+    "hi": 0.2962962962962963,
+    "p": 6.182357400181858e-69,
+    "p_holm": 6.367828122187314e-67
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.052314814814814835,
+    "lo": 0.0,
+    "hi": 0.07407407407407407,
+    "p": 1.0338532633357857e-69,
+    "p_holm": 1.0958844591359328e-67
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.052314814814814835,
+    "lo": 0.0,
+    "hi": 0.07407407407407407,
+    "p": 1.0338532633357857e-69,
+    "p_holm": 1.0958844591359328e-67
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1185576923076923,
+    "lo": 0.038461538461538464,
+    "hi": 0.19230769230769232,
+    "p": 1.926393949884439e-68,
+    "p_holm": 1.8493381918890615e-66
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.26615384615384613,
+    "lo": 0.15384615384615385,
+    "hi": 0.34615384615384615,
+    "p": 1.0060145363755337e-67,
+    "p_holm": 9.054130827379802e-66
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.5978846153846153,
+    "lo": 0.49999999999999994,
+    "hi": 0.6923076923076923,
+    "p": 6.8416768865176225e-68,
+    "p_holm": 6.294342735596212e-66
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.006826923076923077,
+    "lo": 0.0,
+    "hi": 0.038461538461538464,
+    "p": 9.161690569207115e-09,
+    "p_holm": 5.497014341524269e-07
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.8227884615384616,
+    "lo": 0.7307692307692308,
+    "hi": 0.8855769230769222,
+    "p": 1.5908748642178812e-68,
+    "p_holm": 1.5749661155757025e-66
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.04701923076923074,
+    "lo": 0.0,
+    "hi": 0.07692307692307687,
+    "p": 3.589347923284346e-66,
+    "p_holm": 2.9432652970931637e-64
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.35471153846153847,
+    "lo": 0.3076923076923077,
+    "hi": 0.3846153846153846,
+    "p": 7.183693240697594e-70,
+    "p_holm": 7.686551767546425e-68
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.036923076923076906,
+    "lo": 0.0,
+    "hi": 0.11538461538461542,
+    "p": 1.9051004671852389e-56,
+    "p_holm": 1.466927359732634e-54
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.036923076923076906,
+    "lo": 0.0,
+    "hi": 0.11538461538461542,
+    "p": 1.9051004671852389e-56,
+    "p_holm": 1.466927359732634e-54
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "Qwen/Qwen2.5-7B-Instruct|no_intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0115,
+    "lo": 0.0,
+    "hi": 0.08,
+    "p": 1.0766123918377958e-15,
+    "p_holm": 6.674996829394334e-14
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0229,
+    "lo": 0.0,
+    "hi": 0.08,
+    "p": 9.176177067258754e-34,
+    "p_holm": 6.148038635063366e-32
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0433,
+    "lo": 0.0,
+    "hi": 0.12,
+    "p": 5.503336739084788e-55,
+    "p_holm": 4.127502554313591e-53
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0349,
+    "lo": -0.04,
+    "hi": 0.16,
+    "p": 9.741828055826499e-27,
+    "p_holm": 6.234769955728959e-25
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.04450000000000001,
+    "lo": -0.16,
+    "hi": 0.0,
+    "p": 3.864098951591439e-48,
+    "p_holm": 2.7435102556299216e-46
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.006699999999999999,
+    "lo": -0.08,
+    "hi": 0.0,
+    "p": 0.0007097958570974473,
+    "p_holm": 0.04116815971165194
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.0010000000000000002,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 0.43338081755528157,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=5|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=5|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.02557692307692308,
+    "lo": -0.038461538461538464,
+    "hi": 0.11538461538461539,
+    "p": 1.5853114987246704e-31,
+    "p_holm": 1.0463055891582824e-29
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=10|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=10|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.05932692307692308,
+    "lo": -0.038461538461538464,
+    "hi": 0.19230769230769232,
+    "p": 2.0764351859902566e-53,
+    "p_holm": 1.5157976857728874e-51
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=20|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=20|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.12846153846153846,
+    "lo": 0.0,
+    "hi": 0.2692307692307693,
+    "p": 1.979113958852783e-66,
+    "p_holm": 1.64266458584781e-64
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=30|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0020192307692307693,
+    "lo": 0.0,
+    "hi": 0.038461538461538464,
+    "p": 0.04619020348097882,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=30|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1506730769230769,
+    "lo": -0.038461538461538464,
+    "hi": 0.3076923076923077,
+    "p": 1.2510613832771842e-64,
+    "p_holm": 9.883384927889756e-63
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.014038461538461538,
+    "lo": 0.0,
+    "hi": 0.03846153846153849,
+    "p": 1.0017078914260234e-26,
+    "p_holm": 6.310759715983947e-25
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.001634615384615385,
+    "lo": -0.1923076923076923,
+    "hi": 0.07788461538461451,
+    "p": 0.001547471739941521,
+    "p_holm": 0.08820588917666669
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=75|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.015288461538461535,
+    "lo": 0.0,
+    "hi": 0.07692307692307693,
+    "p": 5.7309444421930484e-27,
+    "p_holm": 3.7251138874254813e-25
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=75|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.0006730769230769324,
+    "lo": -0.07692307692307693,
+    "hi": 0.03846153846153849,
+    "p": 0.26161621180250405,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.022019230769230756,
+    "lo": 0.0,
+    "hi": 0.038461538461538436,
+    "p": 1.421111988177131e-48,
+    "p_holm": 1.0232006314875343e-46
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.021249999999999988,
+    "lo": 0.0,
+    "hi": 0.038461538461538436,
+    "p": 8.316839933825379e-45,
+    "p_holm": 5.821787953677765e-43
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "microsoft/Phi-3.5-mini-instruct|no_intervention|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  }
+}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}lcccccc@{}}
+        \toprule
+        \multirow{2}{*}{\textbf{Budget}} & \multicolumn{3}{c}{\qwenseven} & \multicolumn{3}{c}{\phimini} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+         & \staticpone & \roundrobin & \thompson & \staticpone & \roundrobin & \thompson \\
+        \midrule
+        5        & 0.212 & 0.212 & \textbf{0.925} & 0.000 & 0.000 & \textbf{0.250} \\
+        10       & 0.410 & 0.410 & \textbf{0.998} & 0.000 & 0.000 & \textbf{0.435} \\
+        20       & 0.805 & 0.805 & \textbf{1.000} & 0.000 & 0.000 & \textbf{0.670} \\
+        30       & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000 & 0.615 & \textbf{0.808} \\
+        $\geq$75 & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000 & \textbf{1.000} & \textbf{1.000} \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{E4: probability that the protocol escapes the null} at matched budget (number
+    of model calls; 400 replicates, intervention active). This is the quantity a safety team acts
+    on. \staticpone on \phimini never escapes the null at any budget up to 200 calls even though
+    16\% of items are flippable, so its report of robustness is an artifact of the design, not a
+    property of the model. Best per column block in \textbf{bold}.}
+    \label{tab:e4_detection}
+\end{table}

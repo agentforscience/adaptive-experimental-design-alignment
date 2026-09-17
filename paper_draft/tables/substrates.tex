@@ -1,0 +1,22 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Experiment} & \textbf{Substrate} & \textbf{Size} & \textbf{Role} \\
+        \midrule
+        E1, E1c, E3 & \rstraj: released per-iteration & 14 configs, $\sim$437k iteration rows, & Real sequential traces with a continuous \\
+                    & random-search logs~\cite{andriushchenko2024adaptive} & 672 run outcomes & objective; contains a matched adaptive/static pair \\
+        \addlinespace
+        E2 & \jbb: official JailbreakBench & 5 methods $\times$ 4 target models & Complete cost-to-discovery matrix; any \\
+           & artifacts~\cite{chao2024jbb} & $\times$ 100 behaviours & allocation policy can be replayed offline \\
+        \addlinespace
+        E4 & \gsmk test split~\cite{cobbe2021gsm8k} + real & 32 items $\times$ 4 pressure families & End-to-end live replication on a fresh, \\
+           & open-weights LLMs run locally & $\times$ 2 conditions $\times$ 3 models & non-harmful failure mode \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{The three substrates. E1--E3 replay already-published traces and artifacts; E4 runs
+    real model weights locally. No simulated model is used anywhere in this work.}
+    \label{tab:substrates}
+\end{table}

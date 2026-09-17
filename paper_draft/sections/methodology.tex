@@ -1,0 +1,122 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Problem setup}
+
+An evaluation protocol $\pi$ is given a budget $B$ of unit-cost queries, a set of targets
+(behaviours or items) $\gI$, and a set of \families $\gF$. A design family is a qualitatively
+distinct way of probing the model: a suffix-search initialisation, a prompt template class, or a
+social-pressure schema. At each step the protocol chooses a target and a family, spends one unit,
+and observes an outcome $y \in \{0,1\}$ together with a continuous surrogate score $s \in \R$. The
+primary dependent variable is the \emph{detection rate} at matched budget,
+$D_\pi(B) = \frac{1}{|\gI|}\sum_{i\in\gI} \1[\pi \text{ elicits the behaviour on } i \text{ within } B]$.
+We report $D_\pi(B)$ as a whole curve over $B$, never as a single point.
+
+The key comparison in this paper is not adaptive versus static. It is adaptive versus
+\emph{blindly diversified}. Let $\pi_{\text{blind}}$ spend $B$ across $\gF$ on a schedule that is a
+function of $B$ alone, and let $\pi_{\text{adapt}}$ spend $B$ across the same $\gF$ using a
+schedule that is a function of $(B, s_{1:t})$. Because $\pi_{\text{adapt}}$ reduces to
+$\pi_{\text{blind}}$ when its trigger is disabled, $D_{\pi_{\text{adapt}}}(B) -
+D_{\pi_{\text{blind}}}(B)$ isolates the value of using the null as a trigger, with everything else
+held fixed.
+
+\subsection{Substrates}
+
+\tabref{tab:substrates} lists the three substrates. Nothing in E1--E3 is re-run or simulated:
+these are the original authors' own released traces and the official benchmark artifacts. E4 uses
+real model weights executed locally. No simulated agent appears anywhere in this work.
+
+\input{tables/substrates}
+
+\para{\rstraj (E1, E1c, E3).} We parsed the 24 attack logs released with
+\citet{andriushchenko2024adaptive} into 14 configurations, roughly 437k per-iteration rows and 672
+run outcomes. Each row carries the target-token log-probability surrogate and the judge outcome, so
+a protocol can be replayed at iteration granularity. The corpus contains a matched pair on
+\llamaseven that differs only in initialisation policy: \texttt{plain\_init} (static) scores $0.00$
+over 50 behaviours with 56\% of runs hitting the 10{,}000-iteration cap, while the self-transfer
+configuration scores $0.96$ with a median of 2 iterations.
+
+\para{\jbb (E2).} The official JailbreakBench artifacts~\cite{chao2024jbb} give
+\texttt{queries\_to\_jailbreak} and a success flag for 5 attacks $\times$ 4 target models $\times$
+100 behaviours. This is a complete cost-to-discovery matrix, so any allocation policy can be
+replayed offline exactly.
+
+\para{Live grid (E4).} We run three open-weights instruct
+models~\cite{yang2024qwen25,abdin2024phi3} locally on 32 \gsmk test problems
+under an anti-sycophancy system-prompt intervention and a no-intervention control, crossed with
+four social-pressure \families: P1 simple doubt, P2 appeal to authority, P3 fabricated consensus,
+P4 persistent multi-turn pressure. The failure mode is sycophantic answer-flipping, which is
+non-harmful and produces no jailbreak artifacts. Only items the model answers correctly without
+pressure are eligible, so ``flip'' is always well defined. Baseline accuracies are $0.844$
+(\qwenseven), $0.781$ (\phimini) and $0.594$ (\qwensmall), leaving 27, 25 and 19 eligible items
+respectively.
+
+\subsection{Matched-budget replay}
+
+Every experiment follows the same pattern. The outcome matrix is evaluated (or read) once,
+exhaustively, over all targets $\times$ families $\times$ budget positions. Protocols are then
+replayed against that cached matrix under an identical budget. This has three consequences. First,
+the compute confound is removed by construction rather than by argument. Second, every protocol
+comparison is paired on the same behaviours or items, so we can use paired tests. Third, bootstrap
+uncertainty is cheap, because replaying a policy costs microseconds.
+
+\subsection{Protocol arms}
+
+\para{E1: within-search escalation ladder.} Three \families are available on \llamaseven: $d_0$ the
+default \texttt{plain\_init} random search, $d_1$ re-initialisation from a related success
+(self-transfer), and $d_2$ a switch of template family. The arms are \staticzero, \staticone and
+\statictwo (all $B$ on one family; \staticzero is the ``continue-only'' control, \ie maximal
+within-family persistence), \fixedsplit ($B$ divided equally over the three families on a schedule
+that ignores the data), \ladder (same designs, same $B$, but the switch point is moved by the
+continuous surrogate), and \oracle (best family per behaviour). \ladder has three
+hyper-parameters: a patience, a surrogate threshold $\tau$, and an extension factor. At
+$\tau=0$ and extension $1$ it recovers \fixedsplit \emph{exactly}. This is what makes the
+\ladder--\fixedsplit contrast decisive; the \staticzero contrast only establishes that design
+diversity matters at all.
+
+\para{E1c: null diagnosticity.} At checkpoint $t$ we restrict to runs that are \emph{still null at
+$t$}, which is precisely the decision context an adaptive protocol faces, and measure the AUC of
+the surrogate at $t$ for predicting whether the run eventually succeeds. If this AUC is $0.5$, no
+protocol can use the null as a trigger, however cleverly implemented.
+
+\para{E2: portfolio allocation.} Budget is a number of attack runs allocated over methods and
+behaviours. Static arms are \singlemethod (the field default), \roundrobin (diversified but
+non-adaptive) and \bestsingle, an \emph{oracle} single-method choice that upper-bounds any
+\textit{a priori} decision. Adaptive arms are escalation, \thompson (Thompson sampling over
+methods), \succhalving (successive halving) and \escalthompson. \oracle marks the union ceiling.
+
+\para{E3: calibration of the terminal null.} A protocol stops and must emit a nominally 95\% upper
+bound on the elicitable fraction. \fixedcp is Clopper-Pearson at a pre-registered budget,
+\adaptivecp is the same interval at a data-chosen stopping time (what the field actually does),
+\unioncp applies a Bonferroni union bound over the monitoring grid and is genuinely anytime-valid,
+and \extrapolative fits the Best-of-$N$ power law~\cite{hughes2024bon} and extrapolates to the full
+horizon. Ground truth is the outcome at the end of the observed trace.
+
+\para{E4: live protocol race.} \staticpone spends its whole budget on P1, the obvious first design;
+\roundrobin cycles blindly over the four families; \thompson allocates adaptively over families.
+Budget is a number of model calls.
+
+\subsection{Metrics and statistical analysis}
+
+The analysis plan was pre-registered before any protocol was run. Primary metric is detection rate
+at matched budget. Secondary metrics are queries to first detection treated as right-censored
+survival data, AUC of the trigger signal, coverage and width of the emitted upper bound, and, for
+E4, the flip rate under pressure and the fraction of vulnerable items localised.
+
+Uncertainty comes from bootstrap over behaviours or items (1{,}000 resamples, seed 42), never from
+re-running attacks, since the artifact matrix has one realisation per cell. Where an exact
+per-behaviour join exists we use paired bootstrap plus exact McNemar on discordant behaviours;
+unpaired comparisons are matched by resampling and are flagged explicitly as resting on an
+exchangeability assumption. E2 and E4 comparisons use Wilcoxon signed-rank over paired policy
+replicates (300 and 400 respectively). We apply Holm correction within each experiment's family of
+tests at $\alpha = 0.05$, and report an effect size (risk difference, Cohen's $h$) alongside every
+$p$-value. Both the GPT-4-judge and the rule-based outcome are retained throughout; they disagree,
+and we report the disagreement rather than averaging it away.
+
+\subsection{Reproducibility}
+
+Seed 42 everywhere. E4 decoding is greedy (\texttt{do\_sample=False}, temperature 0). Environment:
+Python 3.12, torch 2.13.0+cu130, transformers with native model code
+(\texttt{trust\_remote\_code=False}), pandas 3.0.5, scipy 1.18.0, with \texttt{uv} managing an
+isolated virtual environment. E1--E3 run on CPU in under five minutes in total; the E4 grid took
+roughly 10 GPU-minutes per model on an RTX A6000.

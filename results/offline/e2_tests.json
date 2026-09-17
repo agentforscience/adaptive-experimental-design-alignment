@@ -1,0 +1,898 @@
+{
+  "gpt-3.5-turbo-1106|B=25|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0739,
+    "lo": 0.0,
+    "hi": 0.13,
+    "p": 1.6393341230498004e-50,
+    "p_holm": 9.344204501383862e-49
+  },
+  "gpt-3.5-turbo-1106|B=25|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=25|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.052099999999999994,
+    "lo": -0.01999999999999999,
+    "hi": 0.11,
+    "p": 2.43654157989896e-47,
+    "p_holm": 1.2426362057484696e-45
+  },
+  "gpt-3.5-turbo-1106|B=25|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0669,
+    "lo": -0.0052499999999999995,
+    "hi": 0.12524999999999978,
+    "p": 6.734862187478281e-50,
+    "p_holm": 3.7041742031130546e-48
+  },
+  "gpt-3.5-turbo-1106|B=50|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.17276666666666662,
+    "lo": 0.08000000000000002,
+    "hi": 0.24000000000000002,
+    "p": 5.828537340324167e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "gpt-3.5-turbo-1106|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=50|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.10556666666666668,
+    "lo": 0.030000000000000027,
+    "hi": 0.17,
+    "p": 6.288812602570866e-51,
+    "p_holm": 3.899063813593937e-49
+  },
+  "gpt-3.5-turbo-1106|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1506333333333333,
+    "lo": 0.05000000000000002,
+    "hi": 0.22000000000000003,
+    "p": 5.944403760233581e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "gpt-3.5-turbo-1106|B=100|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.3889666666666667,
+    "lo": 0.28950000000000004,
+    "hi": 0.43000000000000005,
+    "p": 3.639197147241611e-51,
+    "p_holm": 3.202493489572618e-49
+  },
+  "gpt-3.5-turbo-1106|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=100|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.16050000000000003,
+    "lo": 0.10474999999999998,
+    "hi": 0.21000000000000008,
+    "p": 4.044960254726068e-51,
+    "p_holm": 3.397766613969897e-49
+  },
+  "gpt-3.5-turbo-1106|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.32130000000000003,
+    "lo": 0.16475000000000004,
+    "hi": 0.42000000000000004,
+    "p": 5.633822285524596e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "gpt-3.5-turbo-1106|B=150|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.48,
+    "lo": 0.48,
+    "hi": 0.48,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-3.5-turbo-1106|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=150|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.3952333333333334,
+    "lo": 0.37,
+    "hi": 0.43000000000000005,
+    "p": 2.2657727200021917e-51,
+    "p_holm": 2.0618531752019946e-49
+  },
+  "gpt-3.5-turbo-1106|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.4667999999999999,
+    "lo": 0.4600000000000001,
+    "hi": 0.48,
+    "p": 1.2107718018709768e-52,
+    "p_holm": 1.1865563658335573e-50
+  },
+  "gpt-3.5-turbo-1106|B=200|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.48,
+    "lo": 0.48,
+    "hi": 0.48,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-3.5-turbo-1106|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.30143333333333333,
+    "lo": 0.28,
+    "hi": 0.32000000000000006,
+    "p": 6.577409490759851e-52,
+    "p_holm": 6.3800872060370555e-50
+  },
+  "gpt-3.5-turbo-1106|B=200|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.4699666666666666,
+    "lo": 0.4600000000000001,
+    "hi": 0.48,
+    "p": 7.3475803614552765e-53,
+    "p_holm": 7.274104557840724e-51
+  },
+  "gpt-3.5-turbo-1106|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.47699999999999987,
+    "lo": 0.47,
+    "hi": 0.48,
+    "p": 3.1042111015933284e-56,
+    "p_holm": 3.135253212609262e-54
+  },
+  "gpt-3.5-turbo-1106|B=300|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.1399999999999999,
+    "lo": 0.1399999999999999,
+    "hi": 0.1399999999999999,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-3.5-turbo-1106|B=300|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.1399999999999999,
+    "lo": 0.1399999999999999,
+    "hi": 0.1399999999999999,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-3.5-turbo-1106|B=300|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.1357666666666666,
+    "lo": 0.12,
+    "hi": 0.1399999999999999,
+    "p": 1.348474862287685e-54,
+    "p_holm": 1.348474862287685e-52
+  },
+  "gpt-3.5-turbo-1106|B=300|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1399999999999999,
+    "lo": 0.1399999999999999,
+    "hi": 0.1399999999999999,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-3.5-turbo-1106|B=400|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=400|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=400|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -6.666666666666672e-05,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 0.8188400486301368,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=400|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=500|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=500|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=500|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-3.5-turbo-1106|B=500|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=25|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.13283333333333333,
+    "lo": 0.06,
+    "hi": 0.19,
+    "p": 4.8578738944762784e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "gpt-4-0125-preview|B=25|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=25|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.11736666666666667,
+    "lo": 0.03,
+    "hi": 0.16,
+    "p": 4.6593458819161106e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "gpt-4-0125-preview|B=25|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.1313,
+    "lo": 0.06,
+    "hi": 0.19,
+    "p": 4.8324901327194295e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "gpt-4-0125-preview|B=50|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.30523333333333336,
+    "lo": 0.21,
+    "hi": 0.37,
+    "p": 5.625850839104894e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "gpt-4-0125-preview|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=50|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.24316666666666664,
+    "lo": 0.18475000000000003,
+    "hi": 0.3,
+    "p": 4.65824036912622e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "gpt-4-0125-preview|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.2995333333333333,
+    "lo": 0.21,
+    "hi": 0.37,
+    "p": 5.637141109290025e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "gpt-4-0125-preview|B=100|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.6632333333333333,
+    "lo": 0.6,
+    "hi": 0.7052499999999997,
+    "p": 3.8061618573487953e-51,
+    "p_holm": 3.273299197319964e-49
+  },
+  "gpt-4-0125-preview|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=100|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.4667333333333333,
+    "lo": 0.41000000000000003,
+    "hi": 0.5299999999999999,
+    "p": 4.3155417931787986e-51,
+    "p_holm": 3.538744270406615e-49
+  },
+  "gpt-4-0125-preview|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.6484666666666667,
+    "lo": 0.56475,
+    "hi": 0.7,
+    "p": 4.503149454089031e-51,
+    "p_holm": 3.602519563271225e-49
+  },
+  "gpt-4-0125-preview|B=150|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.8199666666666667,
+    "lo": 0.82,
+    "hi": 0.82,
+    "p": 5.404589676969812e-67,
+    "p_holm": 5.620773264048604e-65
+  },
+  "gpt-4-0125-preview|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=150|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.6951666666666666,
+    "lo": 0.6547499999999999,
+    "hi": 0.74,
+    "p": 3.345043244175281e-51,
+    "p_holm": 2.977088487316e-49
+  },
+  "gpt-4-0125-preview|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.7677999999999999,
+    "lo": 0.74,
+    "hi": 0.7999999999999999,
+    "p": 1.790497054553323e-51,
+    "p_holm": 1.6651622607345903e-49
+  },
+  "gpt-4-0125-preview|B=200|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.82,
+    "lo": 0.82,
+    "hi": 0.82,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-4-0125-preview|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.013100000000000002,
+    "lo": 0.0,
+    "hi": 0.030000000000000006,
+    "p": 1.2648334437349661e-48,
+    "p_holm": 6.577133907421823e-47
+  },
+  "gpt-4-0125-preview|B=200|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.7794666666666665,
+    "lo": 0.75,
+    "hi": 0.8099999999999999,
+    "p": 1.8193478694600317e-51,
+    "p_holm": 1.6738000399032293e-49
+  },
+  "gpt-4-0125-preview|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.8047333333333332,
+    "lo": 0.7799999999999999,
+    "hi": 0.82,
+    "p": 8.34828835352728e-52,
+    "p_holm": 7.930873935850915e-50
+  },
+  "gpt-4-0125-preview|B=300|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.5,
+    "lo": 0.5,
+    "hi": 0.5,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-4-0125-preview|B=300|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0627,
+    "lo": 0.040000000000000036,
+    "hi": 0.08000000000000002,
+    "p": 6.898464656051616e-52,
+    "p_holm": 6.6225260698095515e-50
+  },
+  "gpt-4-0125-preview|B=300|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.48066666666666663,
+    "lo": 0.45999999999999996,
+    "hi": 0.5,
+    "p": 9.824588852319416e-52,
+    "p_holm": 9.235113521180251e-50
+  },
+  "gpt-4-0125-preview|B=300|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.5,
+    "lo": 0.5,
+    "hi": 0.5,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "gpt-4-0125-preview|B=400|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=400|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=400|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=400|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=500|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=500|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=500|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "gpt-4-0125-preview|B=500|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=25|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.042866666666666664,
+    "lo": -0.09,
+    "hi": 0.0,
+    "p": 1.163924488843758e-50,
+    "p_holm": 6.867154484178172e-49
+  },
+  "llama-2-7b-chat-hf|B=25|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=25|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.04496666666666666,
+    "lo": -0.1,
+    "hi": -0.009999999999999995,
+    "p": 5.038633121374195e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "llama-2-7b-chat-hf|B=25|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.047900000000000005,
+    "lo": -0.09999999999999998,
+    "hi": -0.0047500000000002185,
+    "p": 6.39620971167795e-51,
+    "p_holm": 3.899063813593937e-49
+  },
+  "llama-2-7b-chat-hf|B=50|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.0553,
+    "lo": -0.11524999999999999,
+    "hi": 0.0,
+    "p": 1.8159863491868907e-50,
+    "p_holm": 1.0169523555446588e-48
+  },
+  "llama-2-7b-chat-hf|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=50|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.12226666666666666,
+    "lo": -0.16999999999999998,
+    "hi": -0.07999999999999999,
+    "p": 4.97210758899523e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "llama-2-7b-chat-hf|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.08133333333333333,
+    "lo": -0.14999999999999997,
+    "hi": -0.01999999999999999,
+    "p": 6.035711610052556e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "llama-2-7b-chat-hf|B=100|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.07583333333333328,
+    "lo": -0.12,
+    "hi": -0.03475000000000015,
+    "p": 3.9272352994653337e-51,
+    "p_holm": 3.3381500045455335e-49
+  },
+  "llama-2-7b-chat-hf|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=100|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.3031999999999999,
+    "lo": -0.35,
+    "hi": -0.2599999999999999,
+    "p": 4.080158897155039e-51,
+    "p_holm": 3.397766613969897e-49
+  },
+  "llama-2-7b-chat-hf|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.1846333333333333,
+    "lo": -0.30999999999999994,
+    "hi": -0.04999999999999993,
+    "p": 5.765158952291954e-51,
+    "p_holm": 3.881837078982376e-49
+  },
+  "llama-2-7b-chat-hf|B=150|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=150|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.09029999999999996,
+    "lo": -0.1299999999999999,
+    "hi": -0.04999999999999993,
+    "p": 2.983111151988191e-51,
+    "p_holm": 2.684800036789372e-49
+  },
+  "llama-2-7b-chat-hf|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.010366666666666632,
+    "lo": -0.07999999999999996,
+    "hi": 0.020000000000000018,
+    "p": 0.03745187818737253,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=200|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=200|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.006033333333333352,
+    "lo": -0.019999999999999907,
+    "hi": 0.020000000000000018,
+    "p": 1.8982019185764438e-23,
+    "p_holm": 8.541908633593997e-22
+  },
+  "llama-2-7b-chat-hf|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.01843333333333335,
+    "lo": 0.010000000000000009,
+    "hi": 0.020000000000000018,
+    "p": 7.617178289918056e-60,
+    "p_holm": 7.769521855716417e-58
+  },
+  "llama-2-7b-chat-hf|B=300|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=300|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=300|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.013866666666666682,
+    "lo": 0.0,
+    "hi": 0.020000000000000018,
+    "p": 6.309558538126084e-51,
+    "p_holm": 3.899063813593937e-49
+  },
+  "llama-2-7b-chat-hf|B=300|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=400|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=400|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=400|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.01863333333333335,
+    "lo": 0.010000000000000009,
+    "hi": 0.020000000000000018,
+    "p": 1.7975053515341223e-60,
+    "p_holm": 1.851430512080146e-58
+  },
+  "llama-2-7b-chat-hf|B=400|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.020000000000000018,
+    "lo": 0.020000000000000018,
+    "hi": 0.020000000000000018,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "llama-2-7b-chat-hf|B=500|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=500|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=500|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "llama-2-7b-chat-hf|B=500|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=25|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.023466666666666663,
+    "lo": -0.06,
+    "hi": 0.010000000000000009,
+    "p": 1.524952475140863e-43,
+    "p_holm": 7.167276633162055e-42
+  },
+  "vicuna-13b-v1.5|B=25|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=25|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.02663333333333333,
+    "lo": -0.07,
+    "hi": 0.010000000000000009,
+    "p": 1.2773469785905099e-45,
+    "p_holm": 6.386734892952549e-44
+  },
+  "vicuna-13b-v1.5|B=25|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.03746666666666667,
+    "lo": -0.07999999999999999,
+    "hi": 0.0,
+    "p": 1.201914061927135e-50,
+    "p_holm": 6.971101559177384e-49
+  },
+  "vicuna-13b-v1.5|B=50|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.04216666666666666,
+    "lo": -0.09525,
+    "hi": 0.005249999999999748,
+    "p": 7.12000567445831e-49,
+    "p_holm": 3.8448030642074876e-47
+  },
+  "vicuna-13b-v1.5|B=50|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=50|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.0867,
+    "lo": -0.14525,
+    "hi": -0.03475000000000023,
+    "p": 5.042429262630426e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "vicuna-13b-v1.5|B=50|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.09583333333333333,
+    "lo": -0.14999999999999997,
+    "hi": -0.03475000000000023,
+    "p": 5.102859702618869e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "vicuna-13b-v1.5|B=100|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": -0.09249999999999997,
+    "lo": -0.15999999999999992,
+    "hi": -0.039999999999999925,
+    "p": 4.672199190836079e-51,
+    "p_holm": 3.6800098916097144e-49
+  },
+  "vicuna-13b-v1.5|B=100|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=100|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.2695333333333333,
+    "lo": -0.32999999999999996,
+    "hi": -0.2147500000000002,
+    "p": 4.3501490406153996e-51,
+    "p_holm": 3.538744270406615e-49
+  },
+  "vicuna-13b-v1.5|B=100|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.27409999999999995,
+    "lo": -0.37,
+    "hi": -0.15999999999999992,
+    "p": 5.413708822778686e-51,
+    "p_holm": 3.7895961759450805e-49
+  },
+  "vicuna-13b-v1.5|B=150|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=150|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=150|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.07976666666666662,
+    "lo": -0.1399999999999999,
+    "hi": -0.03475000000000015,
+    "p": 3.6746566452441905e-51,
+    "p_holm": 3.202493489572618e-49
+  },
+  "vicuna-13b-v1.5|B=150|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.07306666666666663,
+    "lo": -0.19999999999999996,
+    "hi": 0.010000000000000009,
+    "p": 2.4348573902429447e-43,
+    "p_holm": 1.1200343995117546e-41
+  },
+  "vicuna-13b-v1.5|B=200|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=200|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=200|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.004266666666666653,
+    "lo": -0.039999999999999925,
+    "hi": 0.010000000000000009,
+    "p": 0.04438474625604989,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=200|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.010633333333333316,
+    "lo": -0.06999999999999995,
+    "hi": 0.010000000000000009,
+    "p": 3.807673689362349e-08,
+    "p_holm": 1.6753764233194337e-06
+  },
+  "vicuna-13b-v1.5|B=300|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=300|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.010000000000000009,
+    "lo": 0.010000000000000009,
+    "hi": 0.010000000000000009,
+    "p": 3.294362383314041e-67,
+    "p_holm": 4.2167838506419725e-65
+  },
+  "vicuna-13b-v1.5|B=300|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": 0.00046666666666667225,
+    "lo": -0.019999999999999907,
+    "hi": 0.010000000000000009,
+    "p": 0.0005034435478990802,
+    "p_holm": 0.021648072559660447
+  },
+  "vicuna-13b-v1.5|B=300|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0006666666666666705,
+    "lo": -0.019999999999999907,
+    "hi": 0.010000000000000009,
+    "p": 0.0027377159666970804,
+    "p_holm": 0.11498407060127738
+  },
+  "vicuna-13b-v1.5|B=400|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=400|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=400|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.007933333333333339,
+    "lo": -0.010000000000000009,
+    "hi": 0.0,
+    "p": 9.33197530209588e-49,
+    "p_holm": 4.945946910110817e-47
+  },
+  "vicuna-13b-v1.5|B=400|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": -0.006866666666666673,
+    "lo": -0.010000000000000009,
+    "hi": 0.0,
+    "p": 2.9502505017296235e-45,
+    "p_holm": 1.4456227458475156e-43
+  },
+  "vicuna-13b-v1.5|B=500|ADAPTIVE-escal+thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=500|ADAPTIVE-escalation-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  "vicuna-13b-v1.5|B=500|ADAPTIVE-succ-halving-vs-round-robin": {
+    "diff": -0.0070333333333333385,
+    "lo": -0.010000000000000009,
+    "hi": 0.0,
+    "p": 3.7844916824443005e-45,
+    "p_holm": 1.8165560075732643e-43
+  },
+  "vicuna-13b-v1.5|B=500|ADAPTIVE-thompson-vs-round-robin": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+  }
+}

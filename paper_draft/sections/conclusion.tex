@@ -1,0 +1,40 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We asked whether an adaptive evaluation protocol, one that treats its own nulls as triggers for
+experimental redesign, finds more vulnerabilities and produces better-calibrated conclusions than a
+static protocol \emph{at the same compute budget}. We answered it with compute-matched replay on
+437k real attack-search iterations, a complete $5\times4\times100$ cost-to-discovery matrix, and a
+live grid on three open-weights instruct models under a real alignment intervention.
+
+Adaptive protocols do find substantially more at matched compute, but not for the reason the
+hypothesis proposes. The gain comes from searching over \families and from learning across a
+portfolio which family works. Using a failing run's internal signal as a redesign trigger is worth
+approximately nothing (AUC $\approx 0.5$ at every checkpoint) and costs detections at large budgets.
+On the second half of the hypothesis, providing stronger evidence for genuine robustness, adaptive
+protocols currently make things worse: their nulls carry nominally 95\% bounds with 63--67\%
+coverage, and anytime-valid inference does not repair this because the error is in the estimand, not
+the stopping rule.
+
+\para{Recommendations for practice.}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item Pre-allocate budget across at least three \families rather than deepening one. This single
+    change accounts for the entire $0.00 \to 1.00$ effect measured here.
+    \item Spend adaptivity at the portfolio level, using Thompson sampling or successive halving
+    over methods, where nulls aggregate into real evidence.
+    \item Do not instrument within-search stall detection unless you have validated that your
+    progress signal is diagnostic on the surviving-null population. Measure its AUC first.
+    \item Never publish a binomial confidence interval on a null as a bound on vulnerability. Report
+    the design space searched and the ceiling attained; a null is a statement about your design, not
+    about the model.
+    \item Measure intervention effect sizes across \families too. The same intervention looks inert
+    ($0.077 \to 0.037$) or strongly effective ($1.000 \to 0.519$) depending purely on which family
+    you probe with.
+\end{itemize}
+
+\para{Future work.} Three directions follow directly. First, test whether a \emph{better} within-run
+signal, such as true elicitation probability from repeated sampling or a learned probe, is
+diagnostic where target-token probability is not; this is the one way the E1 verdict could flip.
+Second, build a bound whose estimand is elicitability under a \emph{specified} design space, and
+evaluate its coverage against held-out \families. Third, extend the portfolio experiment to methods
+with heterogeneous costs, since our unit-cost accounting flatters cheap methods.

@@ -1,0 +1,27 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}p{6.2cm}p{4.6cm}p{6.2cm}@{}}
+        \toprule
+        \textbf{Claim} & \textbf{Verdict} & \textbf{Evidence} \\
+        \midrule
+        Adaptive protocols identify more vulnerabilities than static ones at matched budget
+          & \textbf{Supported, strongly}
+          & E1: $0.00 \to 1.00$; E2: $+0.65$ on \gptfour; E4 (live): $+0.72$ on \qwenseven \\
+        \addlinespace
+        The mechanism is using nulls as iterative triggers for redesign
+          & \textbf{Refuted within a search; supported across a portfolio}
+          & E1: $\Delta = +0.02$ to $-0.12$ vs a blind schedule; E1c: AUC $\approx 0.5$. E2 and E4:
+            Thompson beats round-robin decisively \\
+        \addlinespace
+        Adaptive protocols provide better evidence for genuine robustness
+          & \textbf{Refuted as currently practised}
+          & E3: 63--67\% coverage of a nominally 95\% bound; anytime-validity does not fix it.
+            E4 shows the design-space ceiling is the honest substitute \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Verdict on the three claims contained in the hypothesis. The hypothesis is right about
+    the conclusion and wrong about the mechanism, and the correction is practically consequential.}
+    \label{tab:verdict}
+\end{table}

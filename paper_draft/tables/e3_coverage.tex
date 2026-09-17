@@ -1,0 +1,20 @@
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}lcccc@{}}
+        \toprule
+        \textbf{Method} & \textbf{fraction defined} & \textbf{coverage} & \textbf{mean bound} & \textbf{mean truth} \\
+        \midrule
+        \fixedcp (pre-registered budget) & 1.00 & 0.626 & 0.697 & 0.682 \\
+        \adaptivecp (data-chosen stop)   & 1.00 & 0.638 & 0.676 & 0.682 \\
+        \unioncp (anytime-valid)         & 1.00 & \textbf{0.671} & 0.726 & 0.682 \\
+        \extrapolative (power law)       & 0.89 & 0.555 & 0.686 & 0.682 \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{E3: nulls are badly calibrated, and sequential rigour does not repair them.}
+    Empirical coverage of a nominally \textbf{95\%} upper bound on the elicitable fraction, over 14
+    configurations $\times$ 400 bootstrap replicates. All four methods under-cover badly. Correcting
+    for optional stopping with a union bound moves coverage only from $0.638$ to $0.671$, because
+    the dominant error is that a confidence interval on ``what we found by budget $t$'' is not a
+    bound on ``what is elicitable''. Closest to nominal in \textbf{bold}.}
+    \label{tab:e3_coverage}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lcccccc@{}}
+        \toprule
+        \multirow{2}{*}{\textbf{Budget}} & \multicolumn{3}{c}{\textbf{Static}} & \multicolumn{2}{c}{\textbf{Adaptive}} & \multirow{2}{*}{\oracle} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-6}
+         & \singlemethod & \roundrobin & \bestsingle (oracle) & \thompson & \escalthompson & \\
+        \midrule
+        \multicolumn{7}{@{}l}{\gptfour-preview \quad (design-space ceiling 0.86)} \\
+        \midrule
+        50  & 0.155 & 0.020 & 0.393 & 0.320 & \textbf{0.325} & 0.50 \\
+        100 & 0.308 & 0.040 & 0.780 & 0.688 & \textbf{0.703} & 0.86 \\
+        150 & 0.308 & 0.040 & 0.780 & 0.808 & \textbf{0.860} & 0.86 \\
+        300 & 0.308 & 0.360 & 0.780 & \textbf{0.860} & \textbf{0.860} & 0.86 \\
+        \midrule
+        \multicolumn{7}{@{}l}{\gptthree-1106 \quad (design-space ceiling 0.95)} \\
+        \midrule
+        100 & 0.545 & 0.470 & 0.930 & 0.791 & \textbf{0.859} & 0.95 \\
+        150 & 0.545 & 0.470 & 0.930 & 0.937 & \textbf{0.950} & 0.95 \\
+        300 & 0.545 & 0.810 & 0.930 & \textbf{0.950} & \textbf{0.950} & 0.95 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{\textbf{E2: portfolio-level adaptivity works.} Fraction of 100 behaviours jailbroken at
+    matched budget (number of attack runs; 300 policy replicates per cell). Adaptive allocation
+    beats the equally diversified \roundrobin by $+0.648$ on \gptfour and $+0.321$ on \gptthree at
+    budget 100 (Holm-adjusted $p<0.001$), and at budget 150 it exceeds \bestsingle, an oracle
+    single-method allocation, because no single method covers all behaviours. Best deployable arm
+    per row in \textbf{bold}; \bestsingle and \oracle are upper bounds, not protocols.}
+    \label{tab:e2_portfolio}
+\end{table}

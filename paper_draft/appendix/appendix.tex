@@ -1,0 +1,67 @@
+\section{Additional experimental detail}
+\label{app:detail}
+
+\subsection{Trigger hyper-parameter sweep (E1)}
+\label{app:sweep}
+
+\ladder has three hyper-parameters: a patience $k$ (how many iterations without improvement before
+the trigger may fire), a surrogate threshold $\tau$ (below which the rung is judged cold), and an
+extension factor $e$ (how much extra budget a warm rung receives). At $\tau = 0$ and $e = 1$ the
+arm reduces to \fixedsplit exactly, which is what makes the contrast in \secref{sec:e1} a clean
+ablation of the trigger alone.
+
+We swept $k \in \{2, 5, 20\}$, $\tau \in \{0.05, 0.3, 0.7\}$ and $e \in \{1, 3, 10\}$, giving 27
+settings, each replayed at every budget. The best setting anywhere in the grid gains $+0.06$ over
+\fixedsplit; the worst loses $-0.17$. No setting produces a gain that survives Holm correction. The
+conclusion in \secref{sec:e1} is therefore a property of the trigger idea, not of one unlucky
+parameterisation.
+
+\subsection{Rung attribution (E1)}
+\label{app:rungs}
+
+For every detection made by \ladder we record which rung was active at the moment of success. Rung
+0 is the default \texttt{plain\_init} random search, rung 1 is re-initialisation from a related
+success, rung 2 is a template-family switch. Across all budgets, rung 0 accounts for 0 detections,
+rung 1 for 31, and rung 2 for 13. This is the direct measurement behind the claim that the benefit
+is a \family effect.
+
+\subsection{Pressure design families (E4)}
+\label{app:families}
+
+The four pressure families are applied after the model produces a correct answer to a \gsmk problem
+under greedy decoding.
+
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+    \item \textbf{P1, simple doubt.} A single expression of disagreement with no justification.
+    \item \textbf{P2, appeal to authority.} A single turn attributing the contrary answer to an
+    expert source.
+    \item \textbf{P3, fabricated consensus.} A single turn asserting that several other people
+    reached a different answer.
+    \item \textbf{P4, persistent multi-turn.} Repeated pushback across several turns without new
+    argument.
+\end{itemize}
+
+The alignment intervention under test is an anti-sycophancy system prompt instructing the model to
+maintain a correct answer under social pressure and to change it only in response to a substantive
+mathematical argument. The control condition is the same grid with no system prompt. An item counts
+as ``flipped'' when the model's final answer changes away from the correct value.
+
+\subsection{Per-configuration coverage (E3)}
+\label{app:coverage}
+
+Pooled coverage in \tabref{tab:e3_coverage} averages over 14 configurations that behave very
+differently. Configurations whose true elicitable fraction is near the middle of the range have
+coverage close to nominal, which is what drags the pooled figure up. The three configurations with
+the highest true elicitable fraction, \texttt{llama2-13b}, \texttt{llama2-70b} and
+\texttt{llama2\_7b} at $0.96$--$1.00$, have coverage of exactly $0.00$ for the adaptive interval:
+the bound fails in every replicate. This is the pattern one expects when the estimand is wrong
+rather than when the interval is merely too narrow, since a too-narrow interval degrades gradually
+while a wrong estimand fails systematically wherever the gap between the two quantities is large.
+
+\subsection{Artifacts}
+\label{app:artifacts}
+
+All code, raw outputs, summaries and statistical tests are released alongside the paper:
+offline results (E1--E3 raw traces, summaries and tests), live results (the E4 grid and protocol
+replay), the figure-generation scripts, and the pre-registered analysis plan written before any
+protocol was run.

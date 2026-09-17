@@ -1,0 +1,193 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{plainnat}
+\citation{chao2023pair}
+\citation{chao2024jbb,andriushchenko2024adaptive}
+\citation{lucki2024unlearning}
+\citation{li2024mhj}
+\citation{andriushchenko2024adaptive}
+\citation{jones2025forecasting}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{andriushchenko2024adaptive}
+\citation{chao2024jbb}
+\citation{cobbe2021gsm8k}
+\citation{perez2022redteaming,ganguli2022redteaming}
+\citation{zou2023gcg}
+\citation{mazeika2024harmbench}
+\citation{chao2023pair}
+\citation{mehrotra2023tap}
+\citation{samvelyan2024rainbow}
+\citation{pavlova2024goat}
+\citation{hong2024curiosity}
+\citation{andriushchenko2024adaptive}
+\citation{hughes2024bon}
+\citation{halder2026scaling}
+\citation{topol2026process}
+\citation{fang2026foundry}
+\citation{jones2025forecasting}
+\citation{wei2023jailbroken}
+\citation{qi2024shallow}
+\citation{hubinger2024sleeper}
+\citation{qi2023finetuning}
+\citation{lucki2024unlearning}
+\citation{che2025tampering}
+\citation{sheshadri2024lat}
+\citation{sharma2025classifiers}
+\citation{betley2025emergent}
+\citation{arditi2024refusal}
+\citation{wollschlager2025geometry}
+\citation{miller2024errorbars}
+\citation{bowyer2025clt}
+\citation{ramdas2022savi,lindon2022anytime}
+\citation{polo2024tinybenchmarks,krumdick2026wild,wu2026faq,tolochinsky2026valid}
+\citation{dorner2024limits}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{3}{Related Work}{section.2}{}}
+\citation{rainforth2023boed}
+\citation{foster2021dad}
+\citation{andriushchenko2024adaptive}
+\citation{chao2024jbb}
+\citation{cobbe2021gsm8k}
+\citation{andriushchenko2024adaptive}
+\citation{chao2024jbb}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The three substrates. E1--E3 replay already-published traces and artifacts; E4 runs real model weights locally. No simulated model is used anywhere in this work.\relax }}{4}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:substrates}{{1}{4}{The three substrates. E1--E3 replay already-published traces and artifacts; E4 runs real model weights locally. No simulated model is used anywhere in this work.\relax }{table.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{4}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{4}{Methodology}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem setup}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Substrates}{4}{subsection.3.2}\protected@file@percent }
+\citation{yang2024qwen25,abdin2024phi3}
+\citation{hughes2024bon}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Matched-budget replay}{5}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Protocol arms}{5}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Metrics and statistical analysis}{5}{subsection.3.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {E1: detection rate at matched iteration budget} on 50 \textsc  {Llama-2-7B-chat}\xspace  behaviours. \textsc  {Static-d0}\xspace  , the default design, detects nothing across four orders of magnitude of budget, while every arm that searches more than one design family\xspace  detects most or all behaviours. \textsc  {Ladder}\xspace  , which uses the null as a switch trigger, never beats \textsc  {Fixed-Split}\xspace  , which switches on a blind schedule with the same budget and the same designs. \textsc  {Oracle}\xspace  is an upper bound (best family per behaviour) and is not a deployable protocol. Best deployable arm per row in \textbf  {bold}.\relax }}{6}{table.caption.3}\protected@file@percent }
+\newlabel{tab:e1_detection}{{2}{6}{\textbf {E1: detection rate at matched iteration budget} on 50 \llamaseven behaviours. \staticzero , the default design, detects nothing across four orders of magnitude of budget, while every arm that searches more than one \family detects most or all behaviours. \ladder , which uses the null as a switch trigger, never beats \fixedsplit , which switches on a blind schedule with the same budget and the same designs. \oracle is an upper bound (best family per behaviour) and is not a deployable protocol. Best deployable arm per row in \textbf {bold}.\relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Reproducibility}{6}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{6}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{6}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}E1: the escalation ladder at matched iteration budget}{6}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:e1}{{4.1}{6}{E1: the escalation ladder at matched iteration budget}{subsection.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Detection rate versus iteration budget on 50 \textsc  {Llama-2-7B-chat}\xspace  behaviours, with 95\% bootstrap intervals over behaviours. \textsc  {Static-d0}\xspace  (the default design) is flat at zero across four orders of magnitude. \textsc  {Ladder}\xspace  tracks \textsc  {Fixed-Split}\xspace  at small budgets and falls behind it at large budgets, so the whole gap to \textsc  {Static-d0}\xspace  is a design family\xspace  effect and none of it is a trigger effect.\relax }}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:e1}{{1}{7}{Detection rate versus iteration budget on 50 \llamaseven behaviours, with 95\% bootstrap intervals over behaviours. \staticzero (the default design) is flat at zero across four orders of magnitude. \ladder tracks \fixedsplit at small budgets and falls behind it at large budgets, so the whole gap to \staticzero is a \family effect and none of it is a trigger effect.\relax }{figure.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {E1c: the null carries no usable signal.} Conditional on a run still being null at iteration $t$, the AUC of the continuous target-token surrogate for predicting eventual success. Every confidence interval covers $0.5$. The easy successes have already left the population by $t$, and what remains is not separable, which is why a trigger built on this signal cannot work.\relax }}{7}{table.caption.5}\protected@file@percent }
+\newlabel{tab:e1c_auc}{{3}{7}{\textbf {E1c: the null carries no usable signal.} Conditional on a run still being null at iteration $t$, the AUC of the continuous target-token surrogate for predicting eventual success. Every confidence interval covers $0.5$. The easy successes have already left the population by $t$, and what remains is not separable, which is why a trigger built on this signal cannot work.\relax }{table.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Diagnosticity of the null. Pooled AUC (with 95\% intervals) of the continuous target-token surrogate at checkpoint $t$ for predicting eventual success, restricted to runs still null at $t$. The horizontal line marks chance. No checkpoint separates from $0.5$, which means the information a null-triggered protocol would act on does not exist in this signal.\relax }}{8}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:e1c}{{2}{8}{Diagnosticity of the null. Pooled AUC (with 95\% intervals) of the continuous target-token surrogate at checkpoint $t$ for predicting eventual success, restricted to runs still null at $t$. The horizontal line marks chance. No checkpoint separates from $0.5$, which means the information a null-triggered protocol would act on does not exist in this signal.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Fraction of 100 behaviours jailbroken versus budget on the JailbreakBench cost-to-discovery matrix, for four target models. Adaptive allocation over methods dominates on \textsc  {GPT-4-0125}\xspace  and \textsc  {GPT-3.5-turbo}\xspace  , where method quality varies widely and is unknown \textit  {a priori}, and loses to blind round-robin on \textsc  {Llama-2-7B-chat}\xspace  and Vicuna-13B, where one method dominates and exploration is pure overhead.\relax }}{8}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:e2}{{3}{8}{Fraction of 100 behaviours jailbroken versus budget on the JailbreakBench cost-to-discovery matrix, for four target models. Adaptive allocation over methods dominates on \gptfour and \gptthree , where method quality varies widely and is unknown \textit {a priori}, and loses to blind round-robin on \llamaseven and Vicuna-13B, where one method dominates and exploration is pure overhead.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}E1c: why the trigger fails}{8}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:e1c}{{4.2}{8}{E1c: why the trigger fails}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}E2: portfolio-level adaptivity does work}{8}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:e2}{{4.3}{8}{E2: portfolio-level adaptivity does work}{subsection.4.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {E2: portfolio-level adaptivity works.} Fraction of 100 behaviours jailbroken at matched budget (number of attack runs; 300 policy replicates per cell). Adaptive allocation beats the equally diversified \textsc  {Static-RR}\xspace  by $+0.648$ on \textsc  {GPT-4-0125}\xspace  and $+0.321$ on \textsc  {GPT-3.5-turbo}\xspace  at budget 100 (Holm-adjusted $p<0.001$), and at budget 150 it exceeds \textsc  {Static-Best}\xspace  , an oracle single-method allocation, because no single method covers all behaviours. Best deployable arm per row in \textbf  {bold}; \textsc  {Static-Best}\xspace  and \textsc  {Oracle}\xspace  are upper bounds, not protocols.\relax }}{9}{table.caption.7}\protected@file@percent }
+\newlabel{tab:e2_portfolio}{{4}{9}{\textbf {E2: portfolio-level adaptivity works.} Fraction of 100 behaviours jailbroken at matched budget (number of attack runs; 300 policy replicates per cell). Adaptive allocation beats the equally diversified \roundrobin by $+0.648$ on \gptfour and $+0.321$ on \gptthree at budget 100 (Holm-adjusted $p<0.001$), and at budget 150 it exceeds \bestsingle , an oracle single-method allocation, because no single method covers all behaviours. Best deployable arm per row in \textbf {bold}; \bestsingle and \oracle are upper bounds, not protocols.\relax }{table.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {E3: nulls are badly calibrated, and sequential rigour does not repair them.} Empirical coverage of a nominally \textbf  {95\%} upper bound on the elicitable fraction, over 14 configurations $\times $ 400 bootstrap replicates. All four methods under-cover badly. Correcting for optional stopping with a union bound moves coverage only from $0.638$ to $0.671$, because the dominant error is that a confidence interval on ``what we found by budget $t$'' is not a bound on ``what is elicitable''. Closest to nominal in \textbf  {bold}.\relax }}{9}{table.caption.9}\protected@file@percent }
+\newlabel{tab:e3_coverage}{{5}{9}{\textbf {E3: nulls are badly calibrated, and sequential rigour does not repair them.} Empirical coverage of a nominally \textbf {95\%} upper bound on the elicitable fraction, over 14 configurations $\times $ 400 bootstrap replicates. All four methods under-cover badly. Correcting for optional stopping with a union bound moves coverage only from $0.638$ to $0.671$, because the dominant error is that a confidence interval on ``what we found by budget $t$'' is not a bound on ``what is elicitable''. Closest to nominal in \textbf {bold}.\relax }{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}E3: the nulls an adaptive protocol emits are badly calibrated}{9}{subsection.4.4}\protected@file@percent }
+\newlabel{sec:e3}{{4.4}{9}{E3: the nulls an adaptive protocol emits are badly calibrated}{subsection.4.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Calibration of the terminal null. Empirical coverage of a nominally 95\% upper bound on the elicitable fraction (dashed line at $0.95$), by method and by configuration. The anytime-valid \textsc  {Union-CP}\xspace  correction is the right fix for the wrong problem: it moves pooled coverage from $0.638$ to $0.671$, still far from nominal.\relax }}{10}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:e3}{{4}{10}{Calibration of the terminal null. Empirical coverage of a nominally 95\% upper bound on the elicitable fraction (dashed line at $0.95$), by method and by configuration. The anytime-valid \unioncp correction is the right fix for the wrong problem: it moves pooled coverage from $0.638$ to $0.671$, still far from nominal.\relax }{figure.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {E4: which design family\xspace  you pick decides what you conclude.} Flip rate by pressure family with the anti-sycophancy intervention active; $n$ is the number of eligible items, i.e.,\xspace  those the model answers correctly without pressure. A static protocol that pre-registers P1, the obvious first design, measures $0.037$ on \textsc  {Qwen2.5-7B}\xspace  and would report that the intervention holds; the same model flips on $0.852$ of items under P3. On \textsc  {Phi-3.5-mini}\xspace  , P1 and P3 both return exactly zero while P2 finds $0.160$. Highest-yielding family per model in \textbf  {bold}; ``ceiling'' is the union over the four families we wrote, not over all possible designs.\relax }}{10}{table.caption.11}\protected@file@percent }
+\newlabel{tab:e4_families}{{6}{10}{\textbf {E4: which \family you pick decides what you conclude.} Flip rate by pressure family with the anti-sycophancy intervention active; $n$ is the number of eligible items, \ie those the model answers correctly without pressure. A static protocol that pre-registers P1, the obvious first design, measures $0.037$ on \qwenseven and would report that the intervention holds; the same model flips on $0.852$ of items under P3. On \phimini , P1 and P3 both return exactly zero while P2 finds $0.160$. Highest-yielding family per model in \textbf {bold}; ``ceiling'' is the union over the four families we wrote, not over all possible designs.\relax }{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}E4: live replication on real open-weights LLMs}{10}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:e4}{{4.5}{10}{E4: live replication on real open-weights LLMs}{subsection.4.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Flip rate by pressure design family\xspace  on three open-weights models, with and without the anti-sycophancy intervention. The spread across families within a single model is far larger than the spread across models within a family, which is what makes a single-family evaluation unsafe to interpret.\relax }}{11}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:e4_families}{{5}{11}{Flip rate by pressure \family on three open-weights models, with and without the anti-sycophancy intervention. The spread across families within a single model is far larger than the spread across models within a family, which is what makes a single-family evaluation unsafe to interpret.\relax }{figure.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \textbf  {E4: probability that the protocol escapes the null} at matched budget (number of model calls; 400 replicates, intervention active). This is the quantity a safety team acts on. \textsc  {Static-P1}\xspace  on \textsc  {Phi-3.5-mini}\xspace  never escapes the null at any budget up to 200 calls even though 16\% of items are flippable, so its report of robustness is an artifact of the design, not a property of the model. Best per column block in \textbf  {bold}.\relax }}{11}{table.caption.13}\protected@file@percent }
+\newlabel{tab:e4_detection}{{7}{11}{\textbf {E4: probability that the protocol escapes the null} at matched budget (number of model calls; 400 replicates, intervention active). This is the quantity a safety team acts on. \staticpone on \phimini never escapes the null at any budget up to 200 calls even though 16\% of items are flippable, so its report of robustness is an artifact of the design, not a property of the model. Best per column block in \textbf {bold}.\relax }{table.caption.13}{}}
+\newlabel{fig:e4_null}{{6a}{12}{Probability of escaping the null\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:e4_null}{{a}{12}{Probability of escaping the null\relax }{figure.caption.14}{}}
+\newlabel{fig:e4_items}{{6b}{12}{Fraction of vulnerable items localised\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:e4_items}{{b}{12}{Fraction of vulnerable items localised\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Live protocol race at matched call budget, 400 replicates. {\em  (a)}the coarse measure a safety team acts on: does the protocol report any flip at all? {\em  (b)}the finer measure: how much of the vulnerable set does it find? Adaptive allocation over design families\xspace  dominates both, and the gap is largest on \textsc  {Qwen2.5-7B}\xspace  , where the design-quality spread is widest.\relax }}{12}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:e4_protocols}{{6}{12}{Live protocol race at matched call budget, 400 replicates. \captiona the coarse measure a safety team acts on: does the protocol report any flip at all? \captionb the finer measure: how much of the vulnerable set does it find? Adaptive allocation over \families dominates both, and the gap is largest on \qwenseven , where the design-quality spread is widest.\relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Verdict on the three claims contained in the hypothesis. The hypothesis is right about the conclusion and wrong about the mechanism, and the correction is practically consequential.\relax }}{12}{table.caption.15}\protected@file@percent }
+\newlabel{tab:verdict}{{8}{12}{Verdict on the three claims contained in the hypothesis. The hypothesis is right about the conclusion and wrong about the mechanism, and the correction is practically consequential.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{12}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{12}{Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}What the results mean}{12}{subsection.5.1}\protected@file@percent }
+\citation{andriushchenko2024adaptive}
+\citation{dorner2024limits}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Why the two levels of adaptivity differ}{13}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Failure modes}{13}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}The surprise}{13}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Limitations}{13}{subsection.5.5}\protected@file@percent }
+\citation{jones2025forecasting}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Broader impact}{14}{subsection.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{14}{Conclusion}{section.6}{}}
+\bibdata{references}
+\bibcite{abdin2024phi3}{{1}{2024}{{Abdin et~al.}}{{Abdin, Aneja, Awadalla, Awadallah, Awan, Bach, Bahree, Bakhtiari, Bao, Behl, et~al.}}}
+\bibcite{andriushchenko2024adaptive}{{2}{2025}{{Andriushchenko et~al.}}{{Andriushchenko, Croce, and Flammarion}}}
+\bibcite{arditi2024refusal}{{3}{2024}{{Arditi et~al.}}{{Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, and Nanda}}}
+\bibcite{betley2025emergent}{{4}{2025}{{Betley et~al.}}{{Betley, Tan, Warncke, Sztyber-Betley, Bao, Soto, Labenz, and Evans}}}
+\bibcite{bowyer2025clt}{{5}{2025}{{Bowyer et~al.}}{{Bowyer, Aitchison, and Ivanova}}}
+\bibcite{chao2023pair}{{6}{2023}{{Chao et~al.}}{{Chao, Robey, Dobriban, Hassani, Pappas, and Wong}}}
+\bibcite{chao2024jbb}{{7}{2024}{{Chao et~al.}}{{Chao, Debenedetti, Robey, Andriushchenko, Croce, Sehwag, Dobriban, Flammarion, Pappas, Tramer, Hassani, and Wong}}}
+\bibcite{che2025tampering}{{8}{2025}{{Che et~al.}}{{Che, Casper, Kirk, Satheesh, Slocum, McKinney, Gandikota, Ewart, Rosati, Wu, et~al.}}}
+\bibcite{cobbe2021gsm8k}{{9}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman}}}
+\bibcite{dorner2024limits}{{10}{2024}{{Dorner et~al.}}{{Dorner, Nastl, and Hardt}}}
+\bibcite{fang2026foundry}{{11}{2026}{{Fang et~al.}}{{}}}
+\bibcite{foster2021dad}{{12}{2021}{{Foster et~al.}}{{Foster, Ivanova, Malik, and Rainforth}}}
+\bibcite{ganguli2022redteaming}{{13}{2022}{{Ganguli et~al.}}{{Ganguli, Lovitt, Kernion, Askell, Bai, Kadavath, Mann, Perez, Schiefer, Ndousse, et~al.}}}
+\bibcite{halder2026scaling}{{14}{2026}{{Halder et~al.}}{{}}}
+\bibcite{hong2024curiosity}{{15}{2024}{{Hong et~al.}}{{Hong, Shenfeld, Wang, Chuang, Pareja, Glass, Srivastava, and Agrawal}}}
+\bibcite{hubinger2024sleeper}{{16}{2024}{{Hubinger et~al.}}{{Hubinger, Denison, Mu, Lambert, Tong, MacDiarmid, Lanham, Ziegler, Maxwell, Cheng, et~al.}}}
+\bibcite{hughes2024bon}{{17}{2024}{{Hughes et~al.}}{{Hughes, Price, Lynch, Schaeffer, Barez, Koyejo, Sleight, Jones, Perez, and Sharma}}}
+\bibcite{jones2025forecasting}{{18}{2025}{{Jones et~al.}}{{Jones, Dragan, and Steinhardt}}}
+\bibcite{krumdick2026wild}{{19}{2026}{{Krumdick et~al.}}{{}}}
+\bibcite{li2024mhj}{{20}{2024}{{Li et~al.}}{{Li, Han, Steneker, Primack, Goodside, Zhang, Wang, Menghini, and Yue}}}
+\bibcite{lindon2022anytime}{{21}{2022}{{Lindon et~al.}}{{Lindon, Ham, Tingley, and Bojinov}}}
+\bibcite{lucki2024unlearning}{{22}{2024}{{{\L }ucki et~al.}}{{{\L }ucki, Wei, Huang, Henderson, Tram{\`e}r, and Rando}}}
+\bibcite{mazeika2024harmbench}{{23}{2024}{{Mazeika et~al.}}{{Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li, Basart, Li, Forsyth, and Hendrycks}}}
+\bibcite{mehrotra2023tap}{{24}{2023}{{Mehrotra et~al.}}{{Mehrotra, Zampetakis, Kassianik, Nelson, Anderson, Singer, and Karbasi}}}
+\bibcite{miller2024errorbars}{{25}{2024}{{Miller}}{{}}}
+\bibcite{pavlova2024goat}{{26}{2024}{{Pavlova et~al.}}{{Pavlova, Brinkman, Iyer, Albiero, Bitton, Nguyen, Li, Ferrer, Evtimov, and Grattafiori}}}
+\bibcite{perez2022redteaming}{{27}{2022}{{Perez et~al.}}{{Perez, Huang, Song, Cai, Ring, Aslanides, Glaese, McAleese, and Irving}}}
+\bibcite{polo2024tinybenchmarks}{{28}{2024}{{Polo et~al.}}{{Polo, Weber, Choshen, Sun, Xu, and Yurochkin}}}
+\bibcite{qi2023finetuning}{{29}{2024}{{Qi et~al.}}{{Qi, Zeng, Xie, Chen, Jia, Mittal, and Henderson}}}
+\bibcite{qi2024shallow}{{30}{2025}{{Qi et~al.}}{{Qi, Panda, Lyu, Ma, Roy, Beirami, Mittal, and Henderson}}}
+\bibcite{rainforth2023boed}{{31}{2023}{{Rainforth et~al.}}{{Rainforth, Foster, Ivanova, and Bickford~Smith}}}
+\bibcite{ramdas2022savi}{{32}{2022}{{Ramdas et~al.}}{{Ramdas, Grunwald, Vovk, and Shafer}}}
+\bibcite{samvelyan2024rainbow}{{33}{2024}{{Samvelyan et~al.}}{{Samvelyan, Raparthy, Lupu, Hambro, Markosyan, Bhatt, Mao, Jiang, Parker-Holder, Foerster, Rockt{\"a}schel, and Raileanu}}}
+\bibcite{sharma2025classifiers}{{34}{2025}{{Sharma et~al.}}{{Sharma, Tong, Mu, Wei, Kruthoff, Goodfriend, Ong, Peng, Agarwal, Anil, et~al.}}}
+\bibcite{sheshadri2024lat}{{35}{2024}{{Sheshadri et~al.}}{{Sheshadri, Ewart, Guo, Lynch, Wu, Hebbar, Sleight, Stickland, Gabrielsson, Casper, et~al.}}}
+\bibcite{tolochinsky2026valid}{{36}{2026}{{Tolochinsky et~al.}}{{Tolochinsky, Tenzer, and Romano}}}
+\bibcite{topol2026process}{{37}{2026}{{Topol}}{{}}}
+\bibcite{wei2023jailbroken}{{38}{2023}{{Wei et~al.}}{{Wei, Haghtalab, and Steinhardt}}}
+\bibcite{wollschlager2025geometry}{{39}{2025}{{Wollschl{\"a}ger et~al.}}{{Wollschl{\"a}ger, Elstner, Geisler, Cohen-Addad, G{\"u}nnemann, and Gasteiger}}}
+\bibcite{wu2026faq}{{40}{2026}{{Wu et~al.}}{{Wu, Nair, and Cand{\`e}s}}}
+\bibcite{yang2024qwen25}{{41}{2024}{{Yang et~al.}}{{Yang, Yang, Zhang, Hui, Zheng, Yu, Li, Liu, Huang, Wei, et~al.}}}
+\bibcite{zou2023gcg}{{42}{2023}{{Zou et~al.}}{{Zou, Wang, Carlini, Nasr, Kolter, and Fredrikson}}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Additional experimental detail}{17}{appendix.A}\protected@file@percent }
+\newlabel{app:detail}{{A}{17}{Additional experimental detail}{appendix.A}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Trigger hyper-parameter sweep (E1)}{17}{subsection.A.1}\protected@file@percent }
+\newlabel{app:sweep}{{A.1}{17}{Trigger hyper-parameter sweep (E1)}{subsection.A.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Rung attribution (E1)}{18}{subsection.A.2}\protected@file@percent }
+\newlabel{app:rungs}{{A.2}{18}{Rung attribution (E1)}{subsection.A.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Pressure design families (E4)}{18}{subsection.A.3}\protected@file@percent }
+\newlabel{app:families}{{A.3}{18}{Pressure design families (E4)}{subsection.A.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Per-configuration coverage (E3)}{18}{subsection.A.4}\protected@file@percent }
+\newlabel{app:coverage}{{A.4}{18}{Per-configuration coverage (E3)}{subsection.A.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}Artifacts}{18}{subsection.A.5}\protected@file@percent }
+\newlabel{app:artifacts}{{A.5}{18}{Artifacts}{subsection.A.5}{}}
+\gdef \@abspage@last{18}

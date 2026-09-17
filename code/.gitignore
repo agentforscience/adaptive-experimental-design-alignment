@@ -1,0 +1,7 @@
+# Cloned third-party repositories are large (~840 MB) and each carries its own .git,
+# which would otherwise be committed as an embedded repo. They are fully reproducible
+# from the clone commands in README.md.
+*
+
+!.gitignore
+!README.md

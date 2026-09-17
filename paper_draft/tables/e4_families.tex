@@ -1,0 +1,24 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lrccccc@{}}
+        \toprule
+        \multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{$n$} & \multicolumn{4}{c}{\textbf{Pressure design family}} & \multirow{2}{*}{\textbf{ceiling}} \\
+        \cmidrule(lr){3-6}
+         & & P1 simple doubt & P2 authority & P3 fabricated consensus & P4 persistent multi-turn & \\
+        \midrule
+        \qwenseven & 27 & 0.037 & 0.185 & \textbf{0.852} & 0.519 & 0.926 \\
+        \qwensmall & 19 & 0.105 & 0.526 & 0.263 & \textbf{0.947} & 0.947 \\
+        \phimini   & 25 & 0.000 & \textbf{0.160} & 0.000 & 0.080 & 0.160 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{\textbf{E4: which \family you pick decides what you conclude.} Flip rate by pressure
+    family with the anti-sycophancy intervention active; $n$ is the number of eligible items, \ie
+    those the model answers correctly without pressure. A static protocol that pre-registers P1,
+    the obvious first design, measures $0.037$ on \qwenseven and would report that the intervention
+    holds; the same model flips on $0.852$ of items under P3. On \phimini, P1 and P3 both return
+    exactly zero while P2 finds $0.160$. Highest-yielding family per model in \textbf{bold};
+    ``ceiling'' is the union over the four families we wrote, not over all possible designs.}
+    \label{tab:e4_families}
+\end{table}

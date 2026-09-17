@@ -1,0 +1,83 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{Adaptive attacks.} Automated red teaming began with attacker language models and large-scale
+human red teaming~\cite{perez2022redteaming,ganguli2022redteaming} and with gradient-based universal
+suffixes~\cite{zou2023gcg}, and is now standardised by HarmBench~\cite{mazeika2024harmbench}. Nearly
+every method since iterates on failure.
+PAIR~\cite{chao2023pair} refines a candidate using the target's refusal, TAP~\cite{mehrotra2023tap}
+adds tree search with pruning, Rainbow Teaming~\cite{samvelyan2024rainbow} maintains a
+quality-diversity archive over attack styles, GOAT~\cite{pavlova2024goat} picks a published attack
+technique per turn, and curiosity-driven red teaming~\cite{hong2024curiosity} adds a novelty bonus
+to an RL attacker. \citet{andriushchenko2024adaptive} state the thesis most directly: adaptive
+attacks are necessary for accurate robustness evaluation, and no single method generalises across
+targets. Their ablation on \llamaseven moves from 0\% to 50\% to 100\% attack success as random
+search and then self-transfer initialisation are added, and their R2D2 result is the built-in
+negative control: self-transfer gives only 12\% there, while switching to an in-context template
+family gives 90\%. Best-of-$N$~\cite{hughes2024bon} is the canonical non-adaptive control, being
+memoryless by construction, and establishes the power law $-\log \mathrm{ASR}(N) = aN^{-b}$ that
+we use as the extrapolative bound in \secref{sec:results}. Unlike all of this work, we hold the
+attack set fixed and vary the \emph{protocol} that schedules it under a fixed budget, so
+adaptivity is not confounded with compute.
+
+\para{Return curves and reproducibility.} Whether adaptive allocation can beat uniform allocation at
+all depends on the shape of the return curve. \citet{halder2026scaling} report a polynomial regime
+without prompt injection and an exponential regime with it, and \citet{topol2026process} apply
+process mining to 8{,}575 scored red-teaming events to show that mutator effectiveness is asymmetric
+across models and that time-to-jailbreak distributions differ by an order of magnitude. This is
+independent 2026 confirmation of the lesson we build on, that which adaptation works is
+model-specific. \citet{fang2026foundry} reproduce 30 published attacks in a unified harness to a
+mean deviation of $+0.26$ percentage points, which is the kind of control that makes replay-based
+comparisons like ours credible.
+
+\para{Nulls, forecasting, and elicitation.} \citet{jones2025forecasting} give the closest prior
+work: they replace a binary null with a continuous elicitation probability and extrapolate extreme
+quantiles via a Gumbel-tail fit, forecasting risk two orders of magnitude beyond the observed
+budget. Their final section uses forecasts to allocate red-teaming compute, which is the direct
+ancestor of our portfolio experiment. They also propose adaptively stopping unpromising queries as
+future work. We take that proposal seriously enough to test it, and find that the within-run
+signal it would rely on is not diagnostic on the population that matters.
+
+\para{Hidden robustness and false nulls.} A second literature supplies the phenomena.
+\citet{wei2023jailbroken} give the taxonomy, splitting failures into competing objectives and
+mismatched generalisation, which is in effect a principled axis set for a design space. Shallow
+safety alignment~\cite{qi2024shallow} shows alignment mostly adapts the first few output tokens,
+which explains why suffix, prefilling, and decoding attacks all work. Sleeper
+agents~\cite{hubinger2024sleeper} persist through SFT, RL, and adversarial training, with
+adversarial training teaching models to hide the trigger better. Fine-tuning breaks guardrails with
+ten examples~\cite{qi2023finetuning}. \citet{lucki2024unlearning} recover unlearned capabilities
+with attacks previously reported as ineffective, and \citet{che2025tampering} show that input-output
+evaluations only lower-bound worst-case behaviour. On the other side, latent adversarial
+training~\cite{sheshadri2024lat} and constitutional classifiers~\cite{sharma2025classifiers} are
+rare cases where a null appears to be earned, the latter at a cost of over 3{,}000 human red-teaming
+hours. \citet{betley2025emergent} add a measurement problem that compounds all of this: narrowly
+fine-tuned models behave inconsistently and sometimes act aligned, so single-sample evaluation has
+low power by construction. Whether adaptive search should pay depends on the dimensionality of the vulnerability
+boundary, which is itself disputed: \citet{arditi2024refusal} report a single refusal direction,
+while \citet{wollschlager2025geometry} report multi-dimensional concept cones. We treat this as a
+moderator rather than settled, and our results are consistent with the family-dependent view.
+
+\para{Statistics for evaluation.} \citet{miller2024errorbars} imports standard errors, clustering,
+paired inference, and power analysis into evaluation, and shows clustered standard errors can be
+$3.05\times$ larger than naive ones. \citet{bowyer2025clt} show CLT intervals badly understate
+uncertainty below a few hundred datapoints, which matters here because adaptive protocols
+concentrate budget on small subsets. Anytime-valid inference~\cite{ramdas2022savi,lindon2022anytime}
+is the correct frame for data-dependent stopping, and adaptive item selection with preserved
+coverage has been developed for capability estimation~\cite{polo2024tinybenchmarks,krumdick2026wild,wu2026faq,tolochinsky2026valid}.
+\citet{dorner2024limits} bound how far an LLM judge can substitute for labels, which is why we
+report both a judge-based and a rule-based outcome throughout. The red-teaming literature has the
+optional-stopping problem and this literature has the fix; we join them, and find, surprisingly,
+that the fix addresses the smaller of two errors.
+
+\para{Bayesian experimental design.} The formal vocabulary the hypothesis reaches for informally is
+that of sequential Bayesian experimental design~\cite{rainforth2023boed}, where a design policy maps
+history to the next design so as to maximise expected information gain, and can be amortised into a
+single forward pass~\cite{foster2021dad}. Our results say something concrete to that framework in
+this domain: the expected information gain of a within-run null is close to zero under the surrogate
+that is actually available, while the expected information gain of a cross-run null about which
+\family to use is large.
+
+\para{Positioning.} Our contribution is the controlled comparison that none of the above performs:
+protocol as independent variable, compute held constant, within-family and cross-family adaptivity
+separated by an ablated comparator, and the null branch scored for coverage rather than assumed
+valid.

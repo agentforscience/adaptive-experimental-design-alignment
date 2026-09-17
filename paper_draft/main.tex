@@ -1,0 +1,56 @@
+\documentclass{article}
+% NEURIPS style (neurips_2025.sty is in paper_draft/).
+% The `main' track option is required alongside `final' so that the style's
+% camera-ready notice string (\@trackname) is defined.
+\usepackage[final,main]{neurips_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+\usepackage{booktabs}  % REQUIRED: professional tables
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% Import command files
+\input{commands/math}
+\input{commands/general}
+\input{commands/macros}
+
+\captionsetup[subfigure]{aboveskip=4pt,belowskip=4pt}
+\captionsetup[table]{aboveskip=4pt,belowskip=4pt}
+\captionsetup[figure]{aboveskip=4pt,belowskip=4pt}
+
+\bibliographystyle{plainnat}
+
+\title{Nulls Are Not Feedback: Adaptive Safety Evaluation\\
+Pays Across Design Families, Not Within Them}
+
+\author{NeuriCo}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliography{references}
+
+\appendix
+\input{appendix/appendix}
+
+\end{document}

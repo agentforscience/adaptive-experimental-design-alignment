@@ -1,0 +1,22 @@
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}rrrccr@{}}
+        \toprule
+        \textbf{Checkpoint $t$} & $n$ & \textbf{configs} & \textbf{pooled AUC} & \textbf{95\% CI} & \textbf{base rate} \\
+        \midrule
+        1   & 471 & 10 & 0.515 & [0.47, 0.57] & 0.69 \\
+        2   & 471 & 10 & 0.612 & [0.50, 0.75] & 0.69 \\
+        3   & 186 & 7  & 0.474 & [0.29, 0.59] & 0.51 \\
+        5   & 142 & 5  & 0.448 & [0.23, 0.56] & 0.54 \\
+        10  & 126 & 4  & 0.470 & [0.28, 0.60] & 0.52 \\
+        25  & 102 & 3  & 0.578 & [0.30, 0.69] & 0.46 \\
+        100 & 67  & 3  & 0.536 & [0.43, 0.62] & 0.40 \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{E1c: the null carries no usable signal.} Conditional on a run still being null
+    at iteration $t$, the AUC of the continuous target-token surrogate for predicting eventual
+    success. Every confidence interval covers $0.5$. The easy successes have already left the
+    population by $t$, and what remains is not separable, which is why a trigger built on this
+    signal cannot work.}
+    \label{tab:e1c_auc}
+\end{table}

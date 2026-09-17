@@ -1,0 +1,17 @@
+Safety evaluations report nulls constantly: ``we could not elicit the behaviour.'' That
+sentence is load-bearing in deployment decisions, and it is ambiguous, because it can mean the
+model is robust or that the experiment was badly designed. A popular remedy is adaptivity: treat
+a null as feedback and redesign. We test this directly, holding total compute constant, which no
+prior work does. We replay four protocol families against 437k real per-iteration attack traces,
+a complete $5\times4\times100$ cost-to-discovery matrix, and a live grid on three open-weights
+instruct models under an anti-sycophancy intervention. Adaptivity helps enormously: a protocol
+that spreads a fixed budget over three design families detects 100\% of behaviours where the
+default single-design protocol detects 0\% at every budget up to 10{,}000 iterations. But almost
+none of that gain comes from the proposed mechanism. Against a comparator that switches design
+family on a blind fixed schedule with identical budget and identical designs, using the null as
+a trigger gains nothing ($\Delta = +0.02$) and loses at large budgets ($\Delta = -0.12$). We
+explain why: conditional on a run still being null, the continuous progress signal predicts
+eventual success at AUC $0.45$--$0.61$, with every interval covering chance. Adaptivity at the
+portfolio level does work ($+0.65$ behaviours on GPT-4; $+0.72$ live on Qwen2.5-7B). Finally,
+nominally 95\% bounds on residual vulnerability achieve 63--67\% coverage, and an anytime-valid
+correction barely helps, because the estimand, not the stopping rule, is wrong.

@@ -1,0 +1,316 @@
+\begin{thebibliography}{42}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdin et~al.(2024)Abdin, Aneja, Awadalla, Awadallah, Awan, Bach,
+  Bahree, Bakhtiari, Bao, Behl, et~al.]{abdin2024phi3}
+Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar~Ahmad Awan,
+  Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao, Harkirat Behl, et~al.
+\newblock {Phi-3} technical report: A highly capable language model locally on
+  your phone.
+\newblock \emph{arXiv preprint arXiv:2404.14219}, 2024.
+
+\bibitem[Andriushchenko et~al.(2025)Andriushchenko, Croce, and
+  Flammarion]{andriushchenko2024adaptive}
+Maksym Andriushchenko, Francesco Croce, and Nicolas Flammarion.
+\newblock Jailbreaking leading safety-aligned {LLM}s with simple adaptive
+  attacks.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+\newblock arXiv:2404.02151.
+
+\bibitem[Arditi et~al.(2024)Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee,
+  and Nanda]{arditi2024refusal}
+Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes
+  Gurnee, and Neel Nanda.
+\newblock Refusal in language models is mediated by a single direction.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2024.
+
+\bibitem[Betley et~al.(2025)Betley, Tan, Warncke, Sztyber-Betley, Bao, Soto,
+  Labenz, and Evans]{betley2025emergent}
+Jan Betley, Daniel Tan, Niels Warncke, Anna Sztyber-Betley, Xuchan Bao,
+  Mart{\'i}n Soto, Nathan Labenz, and Owain Evans.
+\newblock Emergent misalignment: Narrow finetuning can produce broadly
+  misaligned {LLM}s.
+\newblock \emph{arXiv preprint arXiv:2502.17424}, 2025.
+
+\bibitem[Bowyer et~al.(2025)Bowyer, Aitchison, and Ivanova]{bowyer2025clt}
+Sam Bowyer, Laurence Aitchison, and Desi~R Ivanova.
+\newblock Position: Don't use the {CLT} in {LLM} evals with fewer than a few
+  hundred datapoints.
+\newblock \emph{arXiv preprint arXiv:2503.01747}, 2025.
+
+\bibitem[Chao et~al.(2023)Chao, Robey, Dobriban, Hassani, Pappas, and
+  Wong]{chao2023pair}
+Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George~J Pappas,
+  and Eric Wong.
+\newblock Jailbreaking black box large language models in twenty queries.
+\newblock \emph{arXiv preprint arXiv:2310.08419}, 2023.
+
+\bibitem[Chao et~al.(2024)Chao, Debenedetti, Robey, Andriushchenko, Croce,
+  Sehwag, Dobriban, Flammarion, Pappas, Tramer, Hassani, and Wong]{chao2024jbb}
+Patrick Chao, Edoardo Debenedetti, Alexander Robey, Maksym Andriushchenko,
+  Francesco Croce, Vikash Sehwag, Edgar Dobriban, Nicolas Flammarion, George~J
+  Pappas, Florian Tramer, Hamed Hassani, and Eric Wong.
+\newblock {JailbreakBench}: An open robustness benchmark for jailbreaking large
+  language models.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)
+  Datasets and Benchmarks Track}, 2024.
+
+\bibitem[Che et~al.(2025)Che, Casper, Kirk, Satheesh, Slocum, McKinney,
+  Gandikota, Ewart, Rosati, Wu, et~al.]{che2025tampering}
+Zora Che, Stephen Casper, Robert Kirk, Anirudh Satheesh, Stewart Slocum, Lev~E
+  McKinney, Rohit Gandikota, Aidan Ewart, Domenic Rosati, Zichu Wu, et~al.
+\newblock Model tampering attacks enable more rigorous evaluations of {LLM}
+  capabilities.
+\newblock \emph{arXiv preprint arXiv:2502.05209}, 2025.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser,
+  Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman]{cobbe2021gsm8k}
+Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz
+  Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano,
+  Christopher Hesse, and John Schulman.
+\newblock Training verifiers to solve math word problems.
+\newblock In \emph{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem[Dorner et~al.(2024)Dorner, Nastl, and Hardt]{dorner2024limits}
+Florian~E Dorner, Vivian~Y Nastl, and Moritz Hardt.
+\newblock Limits to scalable evaluation at the frontier: {LLM} as judge won't
+  beat twice the data.
+\newblock \emph{arXiv preprint arXiv:2410.13341}, 2024.
+
+\bibitem[Fang et~al.(2026)]{fang2026foundry}
+Yu~Fang et~al.
+\newblock Jailbreak foundry: A multi-agent system for reproducing jailbreak
+  attacks.
+\newblock \emph{arXiv preprint arXiv:2602.24009}, 2026.
+
+\bibitem[Foster et~al.(2021)Foster, Ivanova, Malik, and
+  Rainforth]{foster2021dad}
+Adam Foster, Desi~R Ivanova, Ilyas Malik, and Tom Rainforth.
+\newblock Deep adaptive design: Amortizing sequential {B}ayesian experimental
+  design.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2021.
+
+\bibitem[Ganguli et~al.(2022)Ganguli, Lovitt, Kernion, Askell, Bai, Kadavath,
+  Mann, Perez, Schiefer, Ndousse, et~al.]{ganguli2022redteaming}
+Deep Ganguli, Liane Lovitt, Jackson Kernion, Amanda Askell, Yuntao Bai, Saurav
+  Kadavath, Ben Mann, Ethan Perez, Nicholas Schiefer, Kamal Ndousse, et~al.
+\newblock Red teaming language models to reduce harms: Methods, scaling
+  behaviors, and lessons learned.
+\newblock \emph{arXiv preprint arXiv:2209.07858}, 2022.
+
+\bibitem[Halder et~al.(2026)]{halder2026scaling}
+Sayan Halder et~al.
+\newblock Jailbreak scaling laws: A polynomial--exponential crossover.
+\newblock \emph{arXiv preprint arXiv:2603.11331}, 2026.
+
+\bibitem[Hong et~al.(2024)Hong, Shenfeld, Wang, Chuang, Pareja, Glass,
+  Srivastava, and Agrawal]{hong2024curiosity}
+Zhang-Wei Hong, Idan Shenfeld, Tsun-Hsuan Wang, Yung-Sung Chuang, Aldo Pareja,
+  James Glass, Akash Srivastava, and Pulkit Agrawal.
+\newblock Curiosity-driven red-teaming for large language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
+
+\bibitem[Hubinger et~al.(2024)Hubinger, Denison, Mu, Lambert, Tong, MacDiarmid,
+  Lanham, Ziegler, Maxwell, Cheng, et~al.]{hubinger2024sleeper}
+Evan Hubinger, Carson Denison, Jesse Mu, Mike Lambert, Meg Tong, Monte
+  MacDiarmid, Tamera Lanham, Daniel~M Ziegler, Tim Maxwell, Newton Cheng,
+  et~al.
+\newblock Sleeper agents: Training deceptive {LLM}s that persist through safety
+  training.
+\newblock \emph{arXiv preprint arXiv:2401.05566}, 2024.
+
+\bibitem[Hughes et~al.(2024)Hughes, Price, Lynch, Schaeffer, Barez, Koyejo,
+  Sleight, Jones, Perez, and Sharma]{hughes2024bon}
+John Hughes, Sara Price, Aengus Lynch, Rylan Schaeffer, Fazl Barez, Sanmi
+  Koyejo, Henry Sleight, Erik Jones, Ethan Perez, and Mrinank Sharma.
+\newblock Best-of-{N} jailbreaking.
+\newblock \emph{arXiv preprint arXiv:2412.03556}, 2024.
+
+\bibitem[Jones et~al.(2025)Jones, Dragan, and Steinhardt]{jones2025forecasting}
+Erik Jones, Anca Dragan, and Jacob Steinhardt.
+\newblock Forecasting rare language model behaviors.
+\newblock \emph{arXiv preprint arXiv:2502.16797}, 2025.
+
+\bibitem[Krumdick et~al.(2026)]{krumdick2026wild}
+Michael Krumdick et~al.
+\newblock Cost-efficient estimation of general abilities in language models.
+\newblock \emph{arXiv preprint arXiv:2604.01418}, 2026.
+
+\bibitem[Li et~al.(2024)Li, Han, Steneker, Primack, Goodside, Zhang, Wang,
+  Menghini, and Yue]{li2024mhj}
+Nathaniel Li, Ziwen Han, Ian Steneker, Willow Primack, Riley Goodside, Hugh
+  Zhang, Zifan Wang, Cristina Menghini, and Summer Yue.
+\newblock {LLM} defenses are not robust to multi-turn human jailbreaks yet.
+\newblock \emph{arXiv preprint arXiv:2408.15221}, 2024.
+
+\bibitem[Lindon et~al.(2022)Lindon, Ham, Tingley, and
+  Bojinov]{lindon2022anytime}
+Michael Lindon, Dae~Woong Ham, Martin Tingley, and Iavor Bojinov.
+\newblock Anytime-valid inference in linear models and regression-adjusted
+  causal inference.
+\newblock \emph{arXiv preprint arXiv:2210.08589}, 2022.
+
+\bibitem[{\L}ucki et~al.(2024){\L}ucki, Wei, Huang, Henderson, Tram{\`e}r, and
+  Rando]{lucki2024unlearning}
+Jakub {\L}ucki, Boyi Wei, Yangsibo Huang, Peter Henderson, Florian Tram{\`e}r,
+  and Javier Rando.
+\newblock An adversarial perspective on machine unlearning for {AI} safety.
+\newblock \emph{arXiv preprint arXiv:2409.18025}, 2024.
+
+\bibitem[Mazeika et~al.(2024)Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li,
+  Basart, Li, Forsyth, and Hendrycks]{mazeika2024harmbench}
+Mantas Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, Norman Mu, Elham
+  Sakhaee, Nathaniel Li, Steven Basart, Bo~Li, David Forsyth, and Dan
+  Hendrycks.
+\newblock {HarmBench}: A standardized evaluation framework for automated red
+  teaming and robust refusal.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2024.
+
+\bibitem[Mehrotra et~al.(2023)Mehrotra, Zampetakis, Kassianik, Nelson,
+  Anderson, Singer, and Karbasi]{mehrotra2023tap}
+Anay Mehrotra, Manolis Zampetakis, Paul Kassianik, Blaine Nelson, Hyrum
+  Anderson, Yaron Singer, and Amin Karbasi.
+\newblock Tree of attacks: Jailbreaking black-box {LLM}s automatically.
+\newblock \emph{arXiv preprint arXiv:2312.02119}, 2023.
+
+\bibitem[Miller(2024)]{miller2024errorbars}
+Evan Miller.
+\newblock Adding error bars to evals: A statistical approach to language model
+  evaluations.
+\newblock \emph{arXiv preprint arXiv:2411.00640}, 2024.
+
+\bibitem[Pavlova et~al.(2024)Pavlova, Brinkman, Iyer, Albiero, Bitton, Nguyen,
+  Li, Ferrer, Evtimov, and Grattafiori]{pavlova2024goat}
+Maya Pavlova, Erik Brinkman, Krithika Iyer, Vitor Albiero, Joanna Bitton,
+  Hailey Nguyen, Joanna Li, Cristian~Canton Ferrer, Ivan Evtimov, and Aaron
+  Grattafiori.
+\newblock {GOAT}: Generative offensive agent tester.
+\newblock \emph{arXiv preprint arXiv:2410.01606}, 2024.
+
+\bibitem[Perez et~al.(2022)Perez, Huang, Song, Cai, Ring, Aslanides, Glaese,
+  McAleese, and Irving]{perez2022redteaming}
+Ethan Perez, Saffron Huang, Francis Song, Trevor Cai, Roman Ring, John
+  Aslanides, Amelia Glaese, Nat McAleese, and Geoffrey Irving.
+\newblock Red teaming language models with language models.
+\newblock \emph{arXiv preprint arXiv:2202.03286}, 2022.
+
+\bibitem[Polo et~al.(2024)Polo, Weber, Choshen, Sun, Xu, and
+  Yurochkin]{polo2024tinybenchmarks}
+Felipe~Maia Polo, Lucas Weber, Leshem Choshen, Yuekai Sun, Gongjun Xu, and
+  Mikhail Yurochkin.
+\newblock tiny{B}enchmarks: Evaluating {LLM}s with fewer examples.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2024.
+
+\bibitem[Qi et~al.(2024)Qi, Zeng, Xie, Chen, Jia, Mittal, and
+  Henderson]{qi2023finetuning}
+Xiangyu Qi, Yi~Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and
+  Peter Henderson.
+\newblock Fine-tuning aligned language models compromises safety, even when
+  users do not intend to!
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
+\newblock arXiv:2310.03693.
+
+\bibitem[Qi et~al.(2025)Qi, Panda, Lyu, Ma, Roy, Beirami, Mittal, and
+  Henderson]{qi2024shallow}
+Xiangyu Qi, Ashwinee Panda, Kaifeng Lyu, Xiao Ma, Subhrajit Roy, Ahmad Beirami,
+  Prateek Mittal, and Peter Henderson.
+\newblock Safety alignment should be made more than just a few tokens deep.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+\newblock arXiv:2406.05946.
+
+\bibitem[Rainforth et~al.(2023)Rainforth, Foster, Ivanova, and
+  Bickford~Smith]{rainforth2023boed}
+Tom Rainforth, Adam Foster, Desi~R Ivanova, and Freddie Bickford~Smith.
+\newblock Modern {B}ayesian experimental design.
+\newblock \emph{arXiv preprint arXiv:2302.14545}, 2023.
+
+\bibitem[Ramdas et~al.(2022)Ramdas, Grunwald, Vovk, and Shafer]{ramdas2022savi}
+Aaditya Ramdas, Peter Grunwald, Vladimir Vovk, and Glenn Shafer.
+\newblock Game-theoretic statistics and safe anytime-valid inference.
+\newblock \emph{arXiv preprint arXiv:2210.01948}, 2022.
+
+\bibitem[Samvelyan et~al.(2024)Samvelyan, Raparthy, Lupu, Hambro, Markosyan,
+  Bhatt, Mao, Jiang, Parker-Holder, Foerster, Rockt{\"a}schel, and
+  Raileanu]{samvelyan2024rainbow}
+Mikayel Samvelyan, Sharath~Chandra Raparthy, Andrei Lupu, Eric Hambro, Aram~H
+  Markosyan, Manish Bhatt, Yuning Mao, Minqi Jiang, Jack Parker-Holder, Jakob
+  Foerster, Tim Rockt{\"a}schel, and Roberta Raileanu.
+\newblock Rainbow teaming: Open-ended generation of diverse adversarial
+  prompts.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2024.
+
+\bibitem[Sharma et~al.(2025)Sharma, Tong, Mu, Wei, Kruthoff, Goodfriend, Ong,
+  Peng, Agarwal, Anil, et~al.]{sharma2025classifiers}
+Mrinank Sharma, Meg Tong, Jesse Mu, Jerry Wei, Jorrit Kruthoff, Scott
+  Goodfriend, Euan Ong, Alwin Peng, Raj Agarwal, Cem Anil, et~al.
+\newblock Constitutional classifiers: Defending against universal jailbreaks
+  across thousands of hours of red teaming.
+\newblock \emph{arXiv preprint arXiv:2501.18837}, 2025.
+
+\bibitem[Sheshadri et~al.(2024)Sheshadri, Ewart, Guo, Lynch, Wu, Hebbar,
+  Sleight, Stickland, Gabrielsson, Casper, et~al.]{sheshadri2024lat}
+Abhay Sheshadri, Aidan Ewart, Phillip Guo, Aengus Lynch, Cindy Wu, Vivek
+  Hebbar, Henry Sleight, Asa~Cooper Stickland, Rickard~Br{\"u}el Gabrielsson,
+  Stephen Casper, et~al.
+\newblock Latent adversarial training improves robustness to persistent harmful
+  behaviors in {LLM}s.
+\newblock \emph{arXiv preprint arXiv:2407.15549}, 2024.
+
+\bibitem[Tolochinsky et~al.(2026)Tolochinsky, Tenzer, and
+  Romano]{tolochinsky2026valid}
+Elad Tolochinsky, Yaniv Tenzer, and Yaniv Romano.
+\newblock Valid best-model identification for language model evaluation.
+\newblock \emph{arXiv preprint arXiv:2605.10405}, 2026.
+
+\bibitem[Topol(2026)]{topol2026process}
+Adam Topol.
+\newblock Beyond pass/fail: Process mining of red team attacks on language
+  models.
+\newblock \emph{arXiv preprint arXiv:2606.07833}, 2026.
+
+\bibitem[Wei et~al.(2023)Wei, Haghtalab, and Steinhardt]{wei2023jailbroken}
+Alexander Wei, Nika Haghtalab, and Jacob Steinhardt.
+\newblock Jailbroken: How does {LLM} safety training fail?
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+
+\bibitem[Wollschl{\"a}ger et~al.(2025)Wollschl{\"a}ger, Elstner, Geisler,
+  Cohen-Addad, G{\"u}nnemann, and Gasteiger]{wollschlager2025geometry}
+Tom Wollschl{\"a}ger, Jannes Elstner, Simon Geisler, Vincent Cohen-Addad,
+  Stephan G{\"u}nnemann, and Johannes Gasteiger.
+\newblock The geometry of refusal in large language models: Concept cones and
+  representational independence.
+\newblock \emph{arXiv preprint arXiv:2502.17420}, 2025.
+
+\bibitem[Wu et~al.(2026)Wu, Nair, and Cand{\`e}s]{wu2026faq}
+Yuchen Wu, Vaishnavh Nair, and Emmanuel Cand{\`e}s.
+\newblock Efficient evaluation of large language model performance with
+  statistical guarantees.
+\newblock \emph{arXiv preprint arXiv:2601.20251}, 2026.
+
+\bibitem[Yang et~al.(2024)Yang, Yang, Zhang, Hui, Zheng, Yu, Li, Liu, Huang,
+  Wei, et~al.]{yang2024qwen25}
+An~Yang, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen Yu,
+  Chengyuan Li, Dayiheng Liu, Fei Huang, Haoran Wei, et~al.
+\newblock {Qwen2.5} technical report.
+\newblock \emph{arXiv preprint arXiv:2412.15115}, 2024.
+
+\bibitem[Zou et~al.(2023)Zou, Wang, Carlini, Nasr, Kolter, and
+  Fredrikson]{zou2023gcg}
+Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J~Zico Kolter, and Matt
+  Fredrikson.
+\newblock Universal and transferable adversarial attacks on aligned language
+  models.
+\newblock \emph{arXiv preprint arXiv:2307.15043}, 2023.
+
+\end{thebibliography}

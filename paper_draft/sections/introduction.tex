@@ -1,0 +1,87 @@
+\section{Introduction}
+\label{sec:intro}
+
+A safety evaluation that finds nothing is the most common result in AI safety, and the least
+interpretable. ``We could not elicit the behaviour'' can mean the model is robust, or it can
+mean the experiment was not sensitive enough to see the failure. Static protocols cannot tell
+the two apart, and the difference matters: this sentence appears in model cards, audit reports,
+and deployment decisions.
+
+The literature already contains proof that the second reading is often the correct one. In the
+JailbreakBench artifacts, PAIR~\cite{chao2023pair} scores $0.00$ attack success against
+\llamaseven while prompt-plus-random-search scores $0.90$ on the \emph{same} 100 behaviours of
+the \emph{same} model~\cite{chao2024jbb,andriushchenko2024adaptive}. A lab that ran only PAIR
+would have published a false robustness claim. Similar reversals recur across the alignment
+literature: jailbreaks reported as ineffective against unlearning succeed when applied more
+carefully~\cite{lucki2024unlearning}, and defenses reporting single-digit attack success under
+automated single-turn attacks fall to human multi-turn red teaming more than 70\% of the
+time~\cite{li2024mhj}.
+
+The natural response, and the hypothesis we test, is that protocols should be \emph{adaptive}:
+treat a null as actionable feedback and use it to trigger experimental redesign. This idea is
+widely endorsed and, so far, untested as such.
+
+\para{The gap.} Adaptivity has been argued for \emph{attacks}~\cite{andriushchenko2024adaptive}
+and for \emph{forecasting} rare behaviours~\cite{jones2025forecasting}, but never with the
+protocol as the independent variable and total compute held fixed. Every published adaptivity
+result is confounded with spending more queries, so ``adaptive beats static'' may only mean
+``more compute beats less compute.'' Worse, the word ``adaptive'' silently conflates two very
+different moves: adjusting parameters \emph{inside} a design family, and \emph{switching} design
+family. And nobody scores the null branch, \ie what an adaptive protocol should output when it
+still finds nothing. That branch is exactly the half of the claim that safety cases rest on.
+
+\para{Our approach.} We make the protocol the independent variable and hold the budget constant
+by construction. Each substrate's outcome matrix is evaluated exhaustively once, and protocols
+are then \emph{replayed} against the cached matrix under an identical budget $B$. This removes
+the compute confound, makes every comparison paired on the same behaviours, and lets us report
+whole detection-versus-budget curves rather than single points. We run four experiments on three
+substrates: 437k per-iteration random-search traces released by
+\citet{andriushchenko2024adaptive}; the official JailbreakBench cost-to-discovery
+matrix~\cite{chao2024jbb} of 5 attacks $\times$ 4 target models $\times$ 100 behaviours; and a
+live grid on three open-weights instruct models run locally under a real anti-sycophancy
+intervention, using sycophantic answer-flipping on \gsmk~\cite{cobbe2021gsm8k} as a non-harmful
+failure mode.
+
+The critical design choice is our comparator. Most work contrasts an adaptive protocol with a
+single static design, which cannot separate ``adaptivity works'' from ``design diversity
+works.'' We add \fixedsplit: same budget, same set of design families, but the switch points are
+placed on a blind schedule that ignores the data. Our adaptive arm \ladder is built so that
+disabling its trigger recovers \fixedsplit exactly, so the two arms differ \emph{only} in
+whether the null is used as a trigger.
+
+\para{What we find.} The motivating phenomenon is real and extreme: the default design detects
+$0/50$ behaviours at every budget up to $10{,}000$ iterations, while a protocol spending the
+identical budget across three design families reaches $1.00$ (McNemar $p<10^{-6}$, Cohen's
+$h \approx 2.4$). But against \fixedsplit, the null-as-trigger mechanism gains nothing
+($\Delta = +0.02$, $p = 0.73$) and loses at large budgets ($\Delta = -0.12$, 95\% CI
+$[-0.22, -0.04]$). We trace this to a mechanistic fact: conditional on a run still being null at
+iteration $t$, the continuous progress signal predicts eventual success at pooled AUC
+$0.45$--$0.61$, with every confidence interval covering $0.5$. Adaptivity at the \emph{portfolio}
+level does work, beating an equally diversified static schedule by $+0.65$ behaviours on GPT-4
+and by $+0.72$ live on \qwenseven. Finally, nominally 95\% upper bounds on residual vulnerability
+achieve 63--67\% empirical coverage, and an anytime-valid correction for optional stopping moves
+coverage only from $0.638$ to $0.671$.
+
+\para{Contributions.}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item We propose a compute-matched replay methodology that makes the evaluation protocol the
+    independent variable, and we instantiate it on three substrates covering replayed attack
+    traces, a benchmark cost matrix, and live open-weights models.
+    \item We decompose ``adaptive'' into within-search escalation and portfolio-level allocation,
+    and show with a trigger-ablated comparator that the entire measured benefit comes from
+    searching multiple design families, not from the null-as-trigger mechanism.
+    \item We test the mechanism directly by measuring the diagnosticity (AUC) of the progress
+    signal on the surviving-null population, and find it indistinguishable from chance at all
+    seven checkpoints.
+    \item We score the null branch and show that nominally 95\% bounds cover 63--67\% of the
+    time, that anytime-valid correction does not repair this, and that on total nulls tail
+    extrapolation is undefined 100\% of the time.
+    \item We replicate the whole contrast live on \qwenseven, \qwensmall and \phimini, where a
+    static protocol using the natural first design measures a 3.7\% flip rate and would report
+    that the anti-sycophancy intervention holds, while 85\% of items flip under a different
+    pressure family.
+\end{itemize}
+
+\Secref{sec:related} positions the work, \secref{sec:method} describes the substrates and
+protocol arms, \secref{sec:results} reports the four experiments, and
+\twosecrefs{sec:discussion}{sec:conclusion} discuss implications and limitations.
